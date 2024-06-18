@@ -1,0 +1,54 @@
+body {
+  font-family: "Pretendard";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.inner {
+  padding: 0 50px;
+}
+
+#header .header_lst_wr {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  width: 95%;
+  padding: 0 50px;
+}
+#header .header_lst_wr .header_lst {
+  list-style-type: none;
+}
+#header .header_lst_wr .header_lst .header_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+#header .header_lst_wr .header_lst .header_link:hover {
+  color: #000;
+}
+
+#main #intro {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+}
+#main #project {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+}
+#main #skill {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+}
+#main #contact {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+}/*# sourceMappingURL=comm.css.map */
