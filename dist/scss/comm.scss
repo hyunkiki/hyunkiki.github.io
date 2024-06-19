@@ -20,6 +20,7 @@ body {
     align-items: center;
     width: 89.5%;
     padding: 0 100px;
+    z-index: 100;
     .header_lst {
       list-style-type: none;
       .header_link {
@@ -166,13 +167,44 @@ body {
           font-size: 30px;
           margin-bottom: 20px;
         }
+        p {
+          line-height: 1.9;
+          font-size: 18px;
+        }
       }
     }
   }
   #project {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 150px 0;
     background: #eee;
+    .project_tit {
+      font-size: 50px;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #000;
+      color: transparent;
+      margin-bottom: 20px;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   #skill {
     width: 100%;

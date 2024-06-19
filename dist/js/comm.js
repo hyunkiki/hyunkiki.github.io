@@ -25,3 +25,13 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
   ease: "bounce.out",
 });
 //intro
+
+//project
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
