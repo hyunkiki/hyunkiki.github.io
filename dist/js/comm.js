@@ -6,4 +6,22 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+}); //a태그를 누르면 해당영역으로 부드럽게 이동하기
+
+gsap.registerPlugin(ScrollTrigger);
+const Intromove = gsap.timeline();
+
+Intromove.to(".welcome_wr .welcome_img", {
+  duration: 2,
+  opacity: 1,
+  scale: 1,
+  ease: "bounce.out",
 });
+
+Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
+  duration: 2,
+  opacity: 1,
+  y: "50%",
+  ease: "bounce.out",
+});
+//intro

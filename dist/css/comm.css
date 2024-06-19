@@ -8,7 +8,7 @@ body {
 }
 
 .inner {
-  padding: 0 50px;
+  padding: 0 150px;
 }
 
 #header .header_lst_wr {
@@ -17,8 +17,8 @@ body {
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  width: 95%;
-  padding: 0 50px;
+  width: 89.5%;
+  padding: 0 100px;
 }
 #header .header_lst_wr .header_lst {
   list-style-type: none;
@@ -34,8 +34,132 @@ body {
 
 #main #intro {
   width: 100%;
-  height: 100vh;
   background: #eee;
+}
+#main #intro .welcome_wr {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#main #intro .welcome_wr .welcome_img {
+  margin-top: 150px;
+  width: 500px;
+  opacity: 0;
+  scale: 0.3;
+}
+#main #intro .welcome_wr .welcome_txt01 {
+  margin-top: 20px;
+  font-size: 60px;
+  color: #000;
+  font-weight: bold;
+  opacity: 0;
+}
+#main #intro .welcome_wr .welcome_txt02 {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #000;
+  font-weight: 500;
+  opacity: 0;
+}
+#main #intro .profile_wr {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 0;
+  align-items: center;
+}
+#main #intro .profile_wr .pro_img {
+  width: 45%;
+}
+#main #intro .profile_wr .pro_img .profile_img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#main #intro .profile_wr .txt_box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+#main #intro .profile_wr .txt_box .info .profile_tit {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#main #intro .profile_wr .txt_box .info .profile_tit::before {
+  content: "\f129";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#main #intro .profile_wr .txt_box .info .lst {
+  list-style-type: none;
+}
+#main #intro .profile_wr .txt_box .info .lst li {
+  padding: 6px 0;
+  font-size: 18px;
+}
+#main #intro .profile_wr .txt_box .info .lst li span {
+  width: 15%;
+  display: inline-block;
+  font-size: 18px;
+}
+#main #intro .profile_wr .txt_box .certificate {
+  padding: 30px 0;
+}
+#main #intro .profile_wr .txt_box .certificate .profile_tit {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#main #intro .profile_wr .txt_box .certificate .profile_tit::before {
+  content: "\f559";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#main #intro .profile_wr .txt_box .certificate .lst {
+  list-style-type: none;
+}
+#main #intro .profile_wr .txt_box .certificate li {
+  padding: 6px 0;
+  font-size: 18px;
+}
+#main #intro .profile_wr .txt_box .certificate li span {
+  width: 15%;
+  display: inline-block;
+  font-size: 18px;
+}
+#main #intro .profile_wr .txt_box .education .profile_tit {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#main #intro .profile_wr .txt_box .education .profile_tit::before {
+  content: "\f549";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#main #intro .profile_wr .txt_box .education .lst {
+  list-style-type: none;
+}
+#main #intro .profile_wr .txt_box .education li {
+  padding: 6px 0;
+  font-size: 18px;
+}
+#main #intro .profile_wr .txt_box .education li span {
+  width: 15%;
+  display: inline-block;
+  font-size: 18px;
+}
+#main #intro .profile_wr .ab_bottom_txt {
+  padding-top: 30px;
+}
+#main #intro .profile_wr .ab_bottom_txt h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 #main #project {
   width: 100%;
