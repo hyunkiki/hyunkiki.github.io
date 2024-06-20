@@ -171,13 +171,29 @@ body {
   height: 100%;
   padding: 150px 0;
   background: #eee;
+  position: relative;
 }
-#main #project .project_tit {
+#main #project .project_info_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #project .project_info_box .project_tit {
   font-size: 50px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
   color: transparent;
   margin-bottom: 20px;
+}
+#main #project .project_info_box .project_link {
+  font-size: 18px;
+}
+#main #project .project_info_box .project_link::before {
+  padding-right: 10px;
+  content: "\f063";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 25px;
 }
 #main #project .swiper {
   width: 100%;
@@ -191,6 +207,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 600px;
+  text-decoration: none;
+  color: #000;
 }
 #main #project .swiper-slide img {
   display: block;
@@ -198,11 +216,91 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
+}
+#main #project .swiper-slide .bg_black {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+  border-radius: 10px;
+}
+#main #project .swiper-slide .bg_black:hover {
+  opacity: 0.6;
+}
+#main #project .swiper-slide .bg_black .project_txt {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#main #project .swiper-slide .bg_black .project_txt::before {
+  padding-right: 10px;
+  content: "\f0c1";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
 }
 #main #skill {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #eee;
+  padding: 150px 0;
+}
+#main #skill .skill_tit {
+  font-size: 50px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  color: transparent;
+  margin-bottom: 20px;
+}
+#main #skill .coding_skill_wr {
+  margin-bottom: 50px;
+}
+#main #skill .coding_skill_wr .coding_tit_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#main #skill .coding_skill_wr .coding_tit_box .coding_img {
+  width: 2.5%;
+  margin-right: 10px;
+}
+#main #skill .coding_skill_wr .coding_tit_box .coding_tit {
+  font-size: 30px;
+}
+#main #skill .coding_skill_wr .coding_skill_box {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 100%;
+}
+#main #skill .design_skill_wr .design_tit_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#main #skill .design_skill_wr .design_tit_box .design_img {
+  width: 2.5%;
+  margin-right: 10px;
+}
+#main #skill .design_skill_wr .design_tit_box .design_tit {
+  font-size: 30px;
+}
+#main #skill .design_skill_wr .design_skill_box {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 40%;
 }
 #main #contact {
   width: 100%;
