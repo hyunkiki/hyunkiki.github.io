@@ -286,6 +286,10 @@ body {
 }
 #main #skill .coding_skill_wr .coding_skill_box img {
   width: 70%;
+  transition: transform 2s ease;
+}
+#main #skill .coding_skill_wr .coding_skill_box img:hover {
+  transform: rotate(360deg);
 }
 #main #skill .coding_skill_wr .coding_skill_box .coding_lst {
   display: flex;
@@ -319,6 +323,10 @@ body {
 }
 #main #skill .design_skill_wr .design_skill_box img {
   width: 65%;
+  transition: transform 2s ease;
+}
+#main #skill .design_skill_wr .design_skill_box img:hover {
+  transform: rotateY(360deg);
 }
 #main #skill .design_skill_wr .design_skill_box .design_lst {
   display: flex;
@@ -349,6 +357,10 @@ body {
 }
 #main #skill .cooperation_skill_wr .cooperation_skill_box img {
   width: 70%;
+  transition: transform 2s ease;
+}
+#main #skill .cooperation_skill_wr .cooperation_skill_box img:hover {
+  transform: rotateX(360deg);
 }
 #main #skill .cooperation_skill_wr .cooperation_skill_box .cooperation_lst {
   display: flex;

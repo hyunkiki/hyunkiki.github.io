@@ -296,6 +296,10 @@ body {
         width: 80%;
         img {
           width: 70%;
+          transition: transform 2s ease;
+          &:hover {
+            transform: rotate(360deg);
+          }
         }
         .coding_lst {
           display: flex;
@@ -329,6 +333,10 @@ body {
         width: 30%;
         img {
           width: 65%;
+          transition: transform 2s ease;
+          &:hover {
+            transform: rotateY(360deg);
+          }
         }
         .design_lst {
           display: flex;
@@ -361,6 +369,10 @@ body {
         width: 20%;
         img {
           width: 70%;
+          transition: transform 2s ease;
+          &:hover {
+            transform: rotateX(360deg);
+          }
         }
         .cooperation_lst {
           display: flex;
