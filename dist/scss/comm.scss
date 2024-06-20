@@ -275,11 +275,11 @@ body {
       margin-bottom: 20px;
     }
     .coding_skill_wr {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       .coding_tit_box {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         .coding_img {
           width: 2.5%;
           margin-right: 10px;
@@ -293,14 +293,27 @@ body {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
-        width: 100%;
+        width: 80%;
+        img {
+          width: 70%;
+        }
+        .coding_lst {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .skill_mini_tit {
+            margin-top: 10px;
+            font-size: 18px;
+          }
+        }
       }
     }
     .design_skill_wr {
+      margin-bottom: 40px;
       .design_tit_box {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         .design_img {
           width: 2.5%;
           margin-right: 10px;
@@ -309,12 +322,55 @@ body {
           font-size: 30px;
         }
       }
-
       .design_skill_box {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
-        width: 40%;
+        width: 30%;
+        img {
+          width: 65%;
+        }
+        .design_lst {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .skill_mini_tit {
+            margin-top: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .cooperation_skill_wr {
+      .cooperation_tit_box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .cooperation_img {
+          width: 2.5%;
+          margin-right: 10px;
+        }
+        .cooperation_tit {
+          font-size: 30px;
+        }
+      }
+      .cooperation_skill_box {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 20%;
+        img {
+          width: 70%;
+        }
+        .cooperation_lst {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .skill_mini_tit {
+            margin-top: 10px;
+            font-size: 18px;
+          }
+        }
       }
     }
   }
