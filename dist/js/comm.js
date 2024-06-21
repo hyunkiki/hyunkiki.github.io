@@ -24,9 +24,9 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
   y: "50%",
   ease: "bounce.out",
 });
-//intro
+//intro부분
 
-//project
+//project 슬라이드로 만들기
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
