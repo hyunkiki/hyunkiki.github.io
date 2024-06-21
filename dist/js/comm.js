@@ -1,3 +1,4 @@
+//index.html
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -6,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
-}); //a태그를 누르면 해당영역으로 부드럽게 이동하기
+}); //header에 메뉴의 a태그를 누르면 해당영역으로 부드럽게 이동하기
 
 gsap.registerPlugin(ScrollTrigger);
 const Intromove = gsap.timeline();
@@ -23,10 +24,8 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
   opacity: 1,
   y: "50%",
   ease: "bounce.out",
-});
-//intro부분
+}); //intro부분
 
-//project 슬라이드로 만들기
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -34,4 +33,12 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-});
+}); //project 슬라이드로 만들기
+
+//goal.html
+
+//prada.html
+
+//ghibli.html
+
+//kanu.html
