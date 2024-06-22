@@ -27,18 +27,9 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
 }); //intro부분
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-}); //project 슬라이드로 만들기
-
-//goal.html
-
-//prada.html
-
-//ghibli.html
-
-//kanu.html
+});
+//project
