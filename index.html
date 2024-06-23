@@ -24,12 +24,14 @@
     <meta name="twitter:domain" content="HYUNKI" />
     <title>HYUNKI</title>
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
+    <link href="https://fonts.cdnfonts.com/css/fugaz-one" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -122,8 +124,10 @@
       </section>
       <section id="project">
         <div class="inner">
-          <h2 class="project_tit">저의 PROJECT를 구경하세요!</h2>
-          <div class="swiper mySwiper">
+          <h2 class="project_tit" data-aos="fade-up" data-aos-offset="500">
+            저의 PROJECT를 구경하세요!
+          </h2>
+          <div class="swiper mySwiper" data-aos="fade-up" data-aos-offset="500">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="finger_box">
@@ -148,22 +152,24 @@
                     <ul class="desc">
                       <li>
                         <span class="info_tit">TYPE</span>
-                        <span class="info_exp">Responsive Web</span>
+                        <span class="info_exp"
+                          >Responsive Web&nbsp;/&nbsp;PC, TAB, MOB</span
+                        >
                       </li>
                       <li>
                         <span class="info_tit">PAGE</span>
-                        <span class="info_exp">메인페이지, 서브페이지+6개</span>
+                        <span class="info_exp">Main, Sub Page+6</span>
                       </li>
                       <li>
                         <span class="info_tit">TOOL</span>
                         <span class="info_exp"
-                          >HTML,CSS(SCSS),JS(jquery),Figma</span
+                          >HTML, CSS(SCSS), JS(jquery), FIGMA</span
                         >
                       </li>
                       <li>
                         <span class="info_tit">PROCESS</span>
                         <span class="info_exp"
-                          >Swiper Js,ScrollTrigger,Gnuboard,PHP</span
+                          >Swiper JS, ScrollTrigger, Gnuboard, PHP</span
                         >
                       </li>
                       <li>
@@ -172,15 +178,10 @@
                       </li>
                     </ul>
                     <p>
-                      기존에 있는 GOAL사이트의 복잡한 UI를 그누보드와 카페24를
-                      사용하여 새롭게 디자인과 퍼블리싱을 통해서 리뉴얼를
-                      했습니다. 기존 GOAL 로고도 디자인의 변화에 새롭게 주고자
-                      변경을 해보았습니다. 웹표준과 웹접근성을 고려하고 만든
-                      반응형 웹페이지는 메인, 팀리스트, 팀소개, 뉴스로
-                      구성되었고 반응형 사이즈는 (1024px, 768px, 428px)로 적용을
-                      했습니다. ScrollTrigger를 사용하여 스크롤하면 축구를
-                      소개하는 영상이 보이게 구현히였고 Swiper를 사용하여 GOAL
-                      콘텐츠를 효과적으로 볼 수 있도록 구현했습니다.
+                      골(GOAL)은 주로 세계적으로 거대한 규모를 가진 축구의 모든
+                      정보들을 볼 수 있는 브랜드이자 웹사이트입니다. 기존에 있는
+                      골사이트를 새롭게 리뉴얼하고 축구의 정보를 소개하는 반응형
+                      웹사이트로 제작을 했습니다.
                     </p>
 
                     <div class="site">
@@ -206,9 +207,214 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">
+                <div class="finger_box">
+                  <img
+                    class="finger_arrow"
+                    src="./image/finger_arrow.png"
+                    alt="finger_arrow"
+                  />
+                  <div class="finger_desc">이화면에 마우스를 올려보세요.</div>
+                </div>
+                <div class="project_wrap">
+                  <div class="slide_cover">
+                    <div class="slide_img prada_img"></div>
+                  </div>
+                  <img
+                    class="icon_img"
+                    src="./image/clothicon.png"
+                    alt="cloth"
+                  />
+                  <div class="slide_desc">
+                    <h2 class="proj_name">PRADA</h2>
+                    <ul class="desc">
+                      <li>
+                        <span class="info_tit">TYPE</span>
+                        <span class="info_exp"
+                          >Responsive Web&nbsp;/PC, MOB</span
+                        >
+                      </li>
+                      <li>
+                        <span class="info_tit">PAGE</span>
+                        <span class="info_exp">Main, Sub Page+4</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">TOOL</span>
+                        <span class="info_exp"
+                          >HTML, CSS(SCSS), JS(jquery), Figma</span
+                        >
+                      </li>
+                      <li>
+                        <span class="info_tit">PROCESS</span>
+                        <span class="info_exp">Swiper JS</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">참여도</span>
+                        <span class="info_exp">개인작업 100%</span>
+                      </li>
+                    </ul>
+                    <p>
+                      세계적인 명품 쇼핑브랜드인 프라다입니다. 기존에 있는
+                      프라다를 새롭게 리뉴얼을 하고 프라다 제품들의 정보를
+                      소개하고 구매할 수 있도록 반응형 웹사이트로 제작을
+                      했습니다.
+                    </p>
+                    <div class="site">
+                      <a
+                        class="link"
+                        href="https://www.figma.com/file/Evqhkh8W93263p8lhW8PqU/%ED%94%84%EB%9D%BC%EB%8B%A4-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=9XHYXBQdinsrmXOd-1"
+                        target="_blank"
+                        >Figma</a
+                      >
+                      <a class="link" href="../PRADA/index.html" target="_blank"
+                        >WebSite</a
+                      >
+                      <a
+                        class="link"
+                        href="https://github.com/hyunkiki/PRADA"
+                        target="_blank"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="finger_box">
+                  <img
+                    class="finger_arrow"
+                    src="./image/finger_arrow.png"
+                    alt="finger_arrow"
+                  />
+                  <div class="finger_desc">이화면에 마우스를 올려보세요.</div>
+                </div>
+                <div class="project_wrap">
+                  <div class="slide_cover">
+                    <div class="slide_img ghibli_img"></div>
+                  </div>
+                  <img
+                    class="icon_img"
+                    src="./image/ghibliicon.png"
+                    alt="ghibli"
+                  />
+                  <div class="slide_desc">
+                    <h2 class="proj_name">GHIBLI</h2>
+                    <ul class="desc">
+                      <li>
+                        <span class="info_tit">TYPE</span>
+                        <span class="info_exp">OnePage</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">PAGE</span>
+                        <span class="info_exp">Main</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">TOOL</span>
+                        <span class="info_exp"
+                          >PhotoShop, HTML, CSS(SCSS), JS(jquery)</span
+                        >
+                      </li>
+                      <li>
+                        <span class="info_tit">PROCESS</span>
+                        <span class="info_exp"
+                          >ScrollTrigger, GoogleMap Api, AOS JS</span
+                        >
+                      </li>
+                      <li>
+                        <span class="info_tit">참여도</span>
+                        <span class="info_exp">개인작업 100%</span>
+                      </li>
+                    </ul>
+                    <p>
+                      일본 대표 애니메이션 영화 회사인 스튜디오 지브리를
+                      소개하는 원페이지 사이트로 구현했습니다. 그리고 GSAP
+                      ScrollTrigger를 이용하여 스튜디오 지브리의 정보를 보는데
+                      효과적으로 보실 수 있도록 구현헀습니다.
+                    </p>
+                    <div class="site">
+                      <a
+                        class="link"
+                        href="../Ghibli/index.html"
+                        target="_blank"
+                        >WebSite</a
+                      >
+                      <a
+                        class="link"
+                        href="https://github.com/hyunkiki/Ghibli"
+                        target="_blank"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="finger_box">
+                  <img
+                    class="finger_arrow"
+                    src="./image/finger_arrow.png"
+                    alt="finger_arrow"
+                  />
+                  <div class="finger_desc">이화면에 마우스를 올려보세요.</div>
+                </div>
+                <div class="project_wrap">
+                  <div class="slide_cover">
+                    <div class="slide_img kanu_img"></div>
+                  </div>
+                  <img
+                    class="icon_img"
+                    src="./image/coffeeicon.png"
+                    alt="coffeeicon"
+                  />
+                  <div class="slide_desc">
+                    <h2 class="proj_name">KANU</h2>
+                    <ul class="desc">
+                      <li>
+                        <span class="info_tit">TYPE</span>
+                        <span class="info_exp">OnePage</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">PAGE</span>
+                        <span class="info_exp">Main</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">TOOL</span>
+                        <span class="info_exp">HTML, CSS, JS(jquery)</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">PROCESS</span>
+                        <span class="info_exp">ScrollTrigger, TailWindCSS</span>
+                      </li>
+                      <li>
+                        <span class="info_tit">참여도</span>
+                        <span class="info_exp">개인작업 100%</span>
+                      </li>
+                    </ul>
+                    <p>
+                      우리나라 커피브랜드인 카누 커피를 소개하는 원페이지
+                      사이트로 구현했습니다. 그리고 GSAP ScrollTrigger를
+                      이용하여 카누 커피의 정보를 한눈에 보실 수 있도록
+                      구현하였고 마지막으로는 기존에 작업했었던 SCSS를
+                      사용하지않고 CSS 프레임워크인 TailWindCSS로 적용을
+                      했습니다.
+                    </p>
+                    <div class="site">
+                      <a
+                        class="link"
+                        href="../kanu/src/index.html"
+                        target="_blank"
+                        >WebSite</a
+                      >
+                      <a
+                        class="link"
+                        href="https://github.com/hyunkiki/kanu"
+                        target="_blank"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -224,7 +430,7 @@
               src="./image/contact_arrow.png"
               alt="contact_arrow"
             />
-            <p>Hover Me!</p>
+            <p>Hover icon!</p>
           </div>
           <div class="coding_skill_wr">
             <div class="coding_tit_box">
