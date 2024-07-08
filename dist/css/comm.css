@@ -374,20 +374,6 @@ body {
   color: transparent;
   margin-bottom: 20px;
 }
-#main #skill .hover_box {
-  position: absolute;
-  right: 7%;
-  top: 22%;
-  display: flex;
-  align-items: center;
-}
-#main #skill .hover_box .contact_arrow_img {
-  width: 20%;
-  margin-right: 10px;
-}
-#main #skill .hover_box p {
-  font-size: 18px;
-}
 #main #skill .coding_skill_wr {
   margin-bottom: 40px;
 }
@@ -618,11 +604,12 @@ body {
 }
 #main #contact .contact_bottom_box {
   width: 100%;
-  border-top: 1px solid #000;
   display: flex;
   height: 100px;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
 }
 #main #contact .contact_bottom_box .bottom_txt {
   font-size: 18px;
