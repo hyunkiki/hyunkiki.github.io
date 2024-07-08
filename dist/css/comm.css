@@ -202,8 +202,8 @@ body {
 }
 #main #project .finger_box {
   position: absolute;
-  top: 5%;
-  right: 40%;
+  top: 10%;
+  right: 43%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,8 +224,8 @@ body {
 }
 #main #project .project_wrap .slide_cover {
   position: relative;
-  width: 55%;
-  height: 80%;
+  width: 50%;
+  height: 70%;
   z-index: 900;
 }
 #main #project .project_wrap .slide_cover .slide_img {
@@ -272,8 +272,8 @@ body {
 }
 #main #project .project_wrap .icon_img {
   position: absolute;
-  top: 75%;
-  right: 37%;
+  top: 70%;
+  right: 40%;
   width: 10%;
   animation: up-down 1.5s infinite ease-in-out alternate;
   z-index: 1000;
@@ -376,7 +376,7 @@ body {
 }
 #main #skill .hover_box {
   position: absolute;
-  right: 15%;
+  right: 7%;
   top: 22%;
   display: flex;
   align-items: center;
@@ -395,6 +395,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
 }
 #main #skill .coding_skill_wr .coding_tit_box .coding_img {
   width: 2.5%;
@@ -405,12 +406,12 @@ body {
 }
 #main #skill .coding_skill_wr .coding_skill_box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
-  width: 80%;
+  width: 100%;
 }
 #main #skill .coding_skill_wr .coding_skill_box img {
-  width: 70%;
+  width: 60%;
   transition: transform 2s ease;
 }
 #main #skill .coding_skill_wr .coding_skill_box img:hover {
@@ -432,6 +433,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
 }
 #main #skill .design_skill_wr .design_tit_box .design_img {
   width: 2.5%;
@@ -442,12 +444,12 @@ body {
 }
 #main #skill .design_skill_wr .design_skill_box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
-  width: 30%;
+  width: 100%;
 }
 #main #skill .design_skill_wr .design_skill_box img {
-  width: 65%;
+  width: 60%;
   transition: transform 2s ease;
 }
 #main #skill .design_skill_wr .design_skill_box img:hover {
@@ -466,6 +468,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center;
 }
 #main #skill .cooperation_skill_wr .cooperation_tit_box .cooperation_img {
   width: 2.5%;
@@ -476,12 +479,12 @@ body {
 }
 #main #skill .cooperation_skill_wr .cooperation_skill_box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
-  width: 20%;
+  width: 100%;
 }
 #main #skill .cooperation_skill_wr .cooperation_skill_box img {
-  width: 70%;
+  width: 60%;
   transition: transform 2s ease;
 }
 #main #skill .cooperation_skill_wr .cooperation_skill_box img:hover {
@@ -512,20 +515,6 @@ body {
 }
 #main #contact .contact_thank {
   font-size: 30px;
-}
-#main #contact .hover_box {
-  position: absolute;
-  right: 5%;
-  top: 40%;
-  display: flex;
-  align-items: center;
-}
-#main #contact .hover_box .contact_arrow_img {
-  width: 20%;
-  margin-right: 10px;
-}
-#main #contact .hover_box p {
-  font-size: 18px;
 }
 #main #contact .contact_link_wrap {
   display: flex;
@@ -631,14 +620,12 @@ body {
   width: 100%;
   border-top: 1px solid #000;
   display: flex;
-  flex-direction: column;
   height: 100px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 #main #contact .contact_bottom_box .bottom_txt {
   font-size: 18px;
-  margin-bottom: 20px;
 }
 #main #contact .contact_bottom_box .bottom_copyright {
   font-size: 18px;
