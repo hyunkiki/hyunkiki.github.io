@@ -11,27 +11,71 @@ body {
 }
 
 #header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 100px;
   .header_lst_wr {
-    position: fixed;
     display: flex;
-    justify-content: space-around;
     height: 100px;
     align-items: center;
-    width: 100%;
-    z-index: 100;
-    float: right;
+    list-style-type: none;
     .header_lst {
-      list-style-type: none;
-      padding: 30px;
+      margin: 0 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
       .header_link {
         text-decoration: none;
         color: rgb(0, 0, 0, 0.3);
         font-size: 20px;
+        font-family: "Libre Baskerville", serif;
+        position: relative;
+        &::after {
+          content: "";
+          width: 0%;
+          transition: all 0.8s ease;
+          left: 50%;
+        }
+        &::before {
+          content: "";
+          width: 0%;
+          transition: all 0.8s ease;
+          left: 50%;
+        }
         &:hover {
           color: #000;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -15%;
+            left: 50%;
+            background: #000;
+            height: 3px;
+            width: 50%;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -15%;
+            left: 0px;
+            background: #000;
+            height: 3px;
+            width: 50%;
+          }
         }
       }
     }
+  }
+  .header_logo_wr {
+    list-style-type: none;
   }
 }
 
@@ -54,7 +98,7 @@ body {
       }
       .welcome_txt01 {
         margin-top: 20px;
-        font-size: 60px;
+        font-size: 70px;
         color: #000;
         font-weight: bold;
         opacity: 0;
@@ -513,6 +557,7 @@ body {
       color: transparent;
       font-size: 150px;
       margin-bottom: 20px;
+      text-align: center;
     }
     .contact_last_intro {
       font-size: 18px;
