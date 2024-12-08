@@ -192,128 +192,164 @@ body {
     background: #000;
     padding: 150px 0;
     position: relative;
-    .skill_tit {
-      font-size: 60px;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #000;
-      color: transparent;
-      margin-bottom: 20px;
+    .skill_wr {
+      list-style-type: none;
+      display: flex;
+      align-items: flex-start;
+      .left_wr {
+        color: #fff;
+        width: 50%;
+        .left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .skill_tit {
+            font-size: 60px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #fff;
+            color: transparent;
+            margin-bottom: 20px;
+          }
+          .skill_sub {
+            font-size: 20px;
+          }
+        }
+      }
+      .right_wr {
+        color: #fff;
+        width: 50%;
+        .right {
+          margin: 150px 0;
+          &:first-child {
+            margin: 0;
+          }
+          .right_img {
+            width: 15%;
+            margin-bottom: 20px;
+          }
+          .skill_mini_sub {
+            font-size: 20px;
+            line-height: 1.5;
+          }
+        }
+      }
     }
 
-    .coding_skill_wr {
-      margin-bottom: 40px;
-      .coding_tit_box {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        justify-content: center;
-        .coding_img {
-          width: 2.5%;
-          margin-right: 10px;
-        }
-        .coding_tit {
-          font-size: 30px;
-        }
-      }
+    // .coding_skill_wr {
+    //   margin-bottom: 40px;
+    //   .coding_tit_box {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-bottom: 30px;
+    //     justify-content: center;
+    //     .coding_img {
+    //       width: 2.5%;
+    //       margin-right: 10px;
+    //     }
+    //     .coding_tit {
+    //       font-size: 30px;
+    //     }
+    //   }
 
-      .coding_skill_box {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        width: 100%;
-        img {
-          width: 60%;
-          transition: transform 2s ease;
-          &:hover {
-            transform: rotate(360deg);
-          }
-        }
-        .coding_lst {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .skill_mini_tit {
-            margin-top: 10px;
-            font-size: 18px;
-          }
-        }
-      }
-    }
-    .design_skill_wr {
-      margin-bottom: 40px;
-      .design_tit_box {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        justify-content: center;
-        .design_img {
-          width: 2.5%;
-          margin-right: 10px;
-        }
-        .design_tit {
-          font-size: 30px;
-        }
-      }
-      .design_skill_box {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        width: 100%;
-        img {
-          width: 60%;
-          transition: transform 2s ease;
-          &:hover {
-            transform: rotateY(360deg);
-          }
-        }
-        .design_lst {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .skill_mini_tit {
-            margin-top: 10px;
-            font-size: 18px;
-          }
-        }
-      }
-    }
-    .cooperation_skill_wr {
-      .cooperation_tit_box {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        justify-content: center;
-        .cooperation_img {
-          width: 2.5%;
-          margin-right: 10px;
-        }
-        .cooperation_tit {
-          font-size: 30px;
-        }
-      }
-      .cooperation_skill_box {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        width: 100%;
-        img {
-          width: 60%;
-          transition: transform 2s ease;
-          &:hover {
-            transform: rotateX(360deg);
-          }
-        }
-        .cooperation_lst {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .skill_mini_tit {
-            margin-top: 10px;
-            font-size: 18px;
-          }
-        }
-      }
-    }
+    //   .coding_skill_box {
+    //     display: flex;
+    //     justify-content: center;
+    //     list-style-type: none;
+    //     width: 100%;
+    //     img {
+    //       width: 60%;
+    //       transition: transform 2s ease;
+    //       &:hover {
+    //         transform: rotate(360deg);
+    //       }
+    //     }
+    //     .coding_lst {
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       .skill_mini_tit {
+    //         margin-top: 10px;
+    //         font-size: 18px;
+    //       }
+    //     }
+    //   }
+    // }
+    // .design_skill_wr {
+    //   margin-bottom: 40px;
+    //   .design_tit_box {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-bottom: 30px;
+    //     justify-content: center;
+    //     .design_img {
+    //       width: 2.5%;
+    //       margin-right: 10px;
+    //     }
+    //     .design_tit {
+    //       font-size: 30px;
+    //     }
+    //   }
+    //   .design_skill_box {
+    //     display: flex;
+    //     justify-content: center;
+    //     list-style-type: none;
+    //     width: 100%;
+    //     img {
+    //       width: 60%;
+    //       transition: transform 2s ease;
+    //       &:hover {
+    //         transform: rotateY(360deg);
+    //       }
+    //     }
+    //     .design_lst {
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       .skill_mini_tit {
+    //         margin-top: 10px;
+    //         font-size: 18px;
+    //       }
+    //     }
+    //   }
+    // }
+    // .cooperation_skill_wr {
+    //   .cooperation_tit_box {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-bottom: 20px;
+    //     justify-content: center;
+    //     .cooperation_img {
+    //       width: 2.5%;
+    //       margin-right: 10px;
+    //     }
+    //     .cooperation_tit {
+    //       font-size: 30px;
+    //     }
+    //   }
+    //   .cooperation_skill_box {
+    //     display: flex;
+    //     justify-content: center;
+    //     list-style-type: none;
+    //     width: 100%;
+    //     img {
+    //       width: 60%;
+    //       transition: transform 2s ease;
+    //       &:hover {
+    //         transform: rotateX(360deg);
+    //       }
+    //     }
+    //     .cooperation_lst {
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       .skill_mini_tit {
+    //         margin-top: 10px;
+    //         font-size: 18px;
+    //       }
+    //     }
+    //   }
+    // }
   }
   #project {
     width: 100%;
