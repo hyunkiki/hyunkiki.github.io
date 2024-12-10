@@ -228,47 +228,62 @@ body {
   line-height: 1.5;
 }
 #main #project {
-  width: 100%;
-  height: 100vh;
   padding: 150px 0;
   background: #000;
   position: relative;
 }
-#main #project .left02 {
+#main #project .wrapper {
+  height: 100dvh;
+}
+#main #project .wrapper .lst {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  position: relative;
+}
+#main #project .wrapper .lst .item {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex: none;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  grid-auto-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: absolute;
+  inset: 0%;
+}
+#main #project .wrapper .lst .item .item_content {
+  color: #fff;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+  display: flex;
   text-align: center;
 }
-#main #project .left02 .project_tit_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#main #project .wrapper .lst .item .item_content .item_num {
+  font-size: 30px;
 }
-#main #project .left02 .project_tit_box span {
-  color: #fff;
-  font-size: 20px;
-}
-#main #project .left02 .project_tit_box b {
+#main #project .wrapper .lst .item .item_content .item_tit {
   font-size: 60px;
-  color: #fff;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#main #project .left02 .exptxt p {
+#main #project .wrapper .lst .item .item_content .item_exp {
   font-size: 20px;
-  color: #fff;
-  line-height: 1.5;
+  line-height: 1.8;
 }
-#main #project .left02 .site {
+#main #project .wrapper .lst .item .item_content .site {
   list-style-type: none;
   width: 100%;
   display: flex;
   margin-top: 50px;
   justify-content: center;
 }
-#main #project .left02 .site .link {
+#main #project .wrapper .lst .item .item_content .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -281,7 +296,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-#main #project .left02 .site .link::before {
+#main #project .wrapper .lst .item .item_content .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -295,15 +310,17 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-#main #project .left02 .site .link:hover {
+#main #project .wrapper .lst .item .item_content .site .link:hover {
   text-indent: -20px;
 }
-#main #project .left02 .site .link:hover:before {
+#main #project .wrapper .lst .item .item_content .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
 }
-#main #project .half {
-  width: 50%;
+#main #project .wrapper .lst .item .item_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
   height: 100%;
 }
 #main #contact {
