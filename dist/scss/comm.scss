@@ -61,6 +61,7 @@ body {
         width: 500px;
         opacity: 0;
         scale: 0.3;
+        border-radius: 50%;
       }
       .welcome_txt01 {
         margin-top: 20px;
@@ -335,7 +336,8 @@ body {
       }
     }
   }
-
+}
+#footer {
   #contact {
     width: 100%;
     height: 100%;
@@ -352,136 +354,10 @@ body {
       font-size: 18px;
       text-align: center;
       line-height: 1.5;
+      color: #fff;
       .contact_thank {
         font-size: 25px;
         font-weight: bold;
-      }
-    }
-
-    .contact_link_wrap {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      margin: 0 auto;
-      padding: 50px 0;
-      .contact_link_box {
-        list-style: none;
-        &:nth-child(1) {
-          .contact_link::before {
-            background: rgb(128, 128, 128, 0.5);
-          }
-        }
-        &:nth-child(2) {
-          .contact_link::before {
-            background: gray;
-          }
-        }
-        &:nth-child(3) {
-          .contact_link::before {
-            background: #000;
-          }
-        }
-        &:nth-child(4) {
-          .contact_link::before {
-            background: radial-gradient(
-                circle farthest-corner at 32% 106%,
-                rgb(255, 225, 125) 0%,
-                rgb(255, 205, 105) 10%,
-                rgb(250, 145, 55) 28%,
-                rgb(235, 65, 65) 42%,
-                transparent 82%
-              ),
-              linear-gradient(
-                135deg,
-                rgb(35, 75, 215) 12%,
-                rgb(195, 60, 190) 58%
-              );
-          }
-        }
-        .contact_link {
-          width: 250px;
-          height: 250px;
-          background-color: transparent;
-          text-align: center;
-          line-height: 80px;
-          font-size: 35px;
-          margin: 0 10px;
-          display: block;
-          border-radius: 50%;
-          position: relative;
-          overflow: hidden;
-          border: 5px solid #fff;
-          z-index: 1;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #f00;
-            transition: 0.8s;
-            z-index: 2;
-          }
-          .icon {
-            position: relative;
-            color: #000;
-            transition: 0.8s;
-            z-index: 3;
-            font-size: 120px;
-            padding: 50px 0;
-          }
-          .link_desc {
-            font-size: 18px;
-            color: #000;
-            position: absolute;
-            top: 60%;
-            left: 0;
-            right: 0;
-            z-index: 3;
-            transition: 0.8s;
-            opacity: 0;
-            // transform: translateY(5%);
-          }
-          .link_skip {
-            font-size: 18px;
-            color: #000;
-            position: absolute;
-            top: 60%;
-            left: 0;
-            right: 0;
-            z-index: 3;
-            opacity: 0;
-            transition: 0.8s;
-            // transform: translateY(5%);
-            &::before {
-              content: "\f35d";
-              font-size: 25px;
-              font-weight: 900;
-              font-family: "Line Awesome Free";
-              margin-right: 10px;
-            }
-          }
-          &:hover {
-            .icon {
-              color: #fff;
-              transform: rotateY(360deg);
-            }
-            &::before {
-              top: 0;
-            }
-            .link_desc {
-              color: #fff;
-              opacity: 1;
-              // transform: translateY(0);
-            }
-            .link_skip {
-              color: #fff;
-              opacity: 1;
-              // transform: translateY(0);
-            }
-          }
-        }
       }
     }
 
@@ -490,14 +366,21 @@ body {
       display: flex;
       height: 100px;
       align-items: center;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       line-height: 1.5;
-      .bottom_txt {
-        font-size: 16px;
-      }
+      color: #fff;
+      border-top: 2px solid #fff;
       .bottom_copyright {
-        font-size: 16px;
+        font-size: 18px;
+      }
+      .ft_link {
+        .ft_contact_img {
+          opacity: 0.3;
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
   }

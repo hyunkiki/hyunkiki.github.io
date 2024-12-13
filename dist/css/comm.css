@@ -60,6 +60,7 @@ body {
   width: 500px;
   opacity: 0;
   scale: 0.3;
+  border-radius: 50%;
 }
 #main #intro .welcome_wr .welcome_txt01 {
   margin-top: 20px;
@@ -328,140 +329,47 @@ body {
   width: 100%;
   height: 100%;
 }
-#main #contact {
+
+#footer #contact {
   width: 100%;
   height: 100%;
   background: #000;
   padding-top: 100px;
   position: relative;
 }
-#main #contact .contact_tit {
+#footer #contact .contact_tit {
   color: #fff;
   font-size: 150px;
   margin-bottom: 20px;
   text-align: center;
 }
-#main #contact .contact_last_intro {
+#footer #contact .contact_last_intro {
   font-size: 18px;
   text-align: center;
   line-height: 1.5;
+  color: #fff;
 }
-#main #contact .contact_last_intro .contact_thank {
+#footer #contact .contact_last_intro .contact_thank {
   font-size: 25px;
   font-weight: bold;
 }
-#main #contact .contact_link_wrap {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-#main #contact .contact_link_wrap .contact_link_box {
-  list-style: none;
-}
-#main #contact .contact_link_wrap .contact_link_box:nth-child(1) .contact_link::before {
-  background: rgba(128, 128, 128, 0.5);
-}
-#main #contact .contact_link_wrap .contact_link_box:nth-child(2) .contact_link::before {
-  background: gray;
-}
-#main #contact .contact_link_wrap .contact_link_box:nth-child(3) .contact_link::before {
-  background: #000;
-}
-#main #contact .contact_link_wrap .contact_link_box:nth-child(4) .contact_link::before {
-  background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link {
-  width: 250px;
-  height: 250px;
-  background-color: transparent;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 5px solid #fff;
-  z-index: 1;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.8s;
-  z-index: 2;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link .icon {
-  position: relative;
-  color: #000;
-  transition: 0.8s;
-  z-index: 3;
-  font-size: 120px;
-  padding: 50px 0;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link .link_desc {
-  font-size: 18px;
-  color: #000;
-  position: absolute;
-  top: 60%;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  transition: 0.8s;
-  opacity: 0;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link .link_skip {
-  font-size: 18px;
-  color: #000;
-  position: absolute;
-  top: 60%;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  opacity: 0;
-  transition: 0.8s;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link .link_skip::before {
-  content: "\f35d";
-  font-size: 25px;
-  font-weight: 900;
-  font-family: "Line Awesome Free";
-  margin-right: 10px;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link:hover::before {
-  top: 0;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_desc {
-  color: #fff;
-  opacity: 1;
-}
-#main #contact .contact_link_wrap .contact_link_box .contact_link:hover .link_skip {
-  color: #fff;
-  opacity: 1;
-}
-#main #contact .contact_bottom_box {
+#footer #contact .contact_bottom_box {
   width: 100%;
   display: flex;
   height: 100px;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   line-height: 1.5;
+  color: #fff;
+  border-top: 2px solid #fff;
 }
-#main #contact .contact_bottom_box .bottom_txt {
-  font-size: 16px;
+#footer #contact .contact_bottom_box .bottom_copyright {
+  font-size: 18px;
 }
-#main #contact .contact_bottom_box .bottom_copyright {
-  font-size: 16px;
+#footer #contact .contact_bottom_box .ft_link .ft_contact_img {
+  opacity: 0.3;
+}
+#footer #contact .contact_bottom_box .ft_link .ft_contact_img:hover {
+  opacity: 1;
 }/*# sourceMappingURL=comm.css.map */
