@@ -203,12 +203,9 @@ body {
           display: flex;
           flex-direction: column;
           align-items: center;
-
           .skill_tit {
             font-size: 60px;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: #fff;
-            color: transparent;
+            color: #fff;
             margin-bottom: 20px;
           }
           .skill_sub {
@@ -235,126 +232,14 @@ body {
         }
       }
     }
-
-    // .coding_skill_wr {
-    //   margin-bottom: 40px;
-    //   .coding_tit_box {
-    //     display: flex;
-    //     align-items: center;
-    //     margin-bottom: 30px;
-    //     justify-content: center;
-    //     .coding_img {
-    //       width: 2.5%;
-    //       margin-right: 10px;
-    //     }
-    //     .coding_tit {
-    //       font-size: 30px;
-    //     }
-    //   }
-
-    //   .coding_skill_box {
-    //     display: flex;
-    //     justify-content: center;
-    //     list-style-type: none;
-    //     width: 100%;
-    //     img {
-    //       width: 60%;
-    //       transition: transform 2s ease;
-    //       &:hover {
-    //         transform: rotate(360deg);
-    //       }
-    //     }
-    //     .coding_lst {
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-items: center;
-    //       .skill_mini_tit {
-    //         margin-top: 10px;
-    //         font-size: 18px;
-    //       }
-    //     }
-    //   }
-    // }
-    // .design_skill_wr {
-    //   margin-bottom: 40px;
-    //   .design_tit_box {
-    //     display: flex;
-    //     align-items: center;
-    //     margin-bottom: 30px;
-    //     justify-content: center;
-    //     .design_img {
-    //       width: 2.5%;
-    //       margin-right: 10px;
-    //     }
-    //     .design_tit {
-    //       font-size: 30px;
-    //     }
-    //   }
-    //   .design_skill_box {
-    //     display: flex;
-    //     justify-content: center;
-    //     list-style-type: none;
-    //     width: 100%;
-    //     img {
-    //       width: 60%;
-    //       transition: transform 2s ease;
-    //       &:hover {
-    //         transform: rotateY(360deg);
-    //       }
-    //     }
-    //     .design_lst {
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-items: center;
-    //       .skill_mini_tit {
-    //         margin-top: 10px;
-    //         font-size: 18px;
-    //       }
-    //     }
-    //   }
-    // }
-    // .cooperation_skill_wr {
-    //   .cooperation_tit_box {
-    //     display: flex;
-    //     align-items: center;
-    //     margin-bottom: 20px;
-    //     justify-content: center;
-    //     .cooperation_img {
-    //       width: 2.5%;
-    //       margin-right: 10px;
-    //     }
-    //     .cooperation_tit {
-    //       font-size: 30px;
-    //     }
-    //   }
-    //   .cooperation_skill_box {
-    //     display: flex;
-    //     justify-content: center;
-    //     list-style-type: none;
-    //     width: 100%;
-    //     img {
-    //       width: 60%;
-    //       transition: transform 2s ease;
-    //       &:hover {
-    //         transform: rotateX(360deg);
-    //       }
-    //     }
-    //     .cooperation_lst {
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-items: center;
-    //       .skill_mini_tit {
-    //         margin-top: 10px;
-    //         font-size: 18px;
-    //       }
-    //     }
-    //   }
-    // }
   }
   #project {
     padding: 150px 0;
     background: #000;
     position: relative;
+    #section {
+      overflow: hidden;
+    }
     .wrapper {
       height: 100dvh;
       .lst {
@@ -390,6 +275,10 @@ body {
               font-size: 60px;
               padding-top: 20px;
               padding-bottom: 40px;
+            }
+            .item_pg_ct {
+              padding-bottom: 20px;
+              font-size: 25px;
             }
             .item_exp {
               font-size: 20px;
@@ -454,9 +343,7 @@ body {
     padding-top: 100px;
     position: relative;
     .contact_tit {
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #000;
-      color: transparent;
+      color: #fff;
       font-size: 150px;
       margin-bottom: 20px;
       text-align: center;

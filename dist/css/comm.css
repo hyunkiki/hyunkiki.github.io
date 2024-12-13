@@ -201,9 +201,7 @@ body {
 }
 #main #skill .skill_wr .left_wr .left .skill_tit {
   font-size: 60px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
-  color: transparent;
+  color: #fff;
   margin-bottom: 20px;
 }
 #main #skill .skill_wr .left_wr .left .skill_sub {
@@ -231,6 +229,9 @@ body {
   padding: 150px 0;
   background: #000;
   position: relative;
+}
+#main #project #section {
+  overflow: hidden;
 }
 #main #project .wrapper {
   height: 100dvh;
@@ -271,6 +272,10 @@ body {
   font-size: 60px;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+#main #project .wrapper .lst .item .item_content .item_pg_ct {
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 #main #project .wrapper .lst .item .item_content .item_exp {
   font-size: 20px;
@@ -331,9 +336,7 @@ body {
   position: relative;
 }
 #main #contact .contact_tit {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
-  color: transparent;
+  color: #fff;
   font-size: 150px;
   margin-bottom: 20px;
   text-align: center;

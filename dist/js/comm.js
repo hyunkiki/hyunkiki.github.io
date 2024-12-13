@@ -50,3 +50,48 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 //project
+gsap.registerPlugin(ScrollTrigger);
+// Select the HTML elements needed for the animation
+const horizontalSection = document.querySelector(".horizontal_section");
+const wrapper = horizontalSection.querySelector(".wrapper");
+const items = wrapper.querySelectorAll(".item");
+
+// Set initial positions of items
+items.forEach((item, index) => {
+  if (index !== 0) {
+    gsap.set(item, { xPercent: 100 });
+  }
+});
+
+function initScroll() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: horizontalSection,
+      pin: true,
+      start: "top top",
+      end: () => `+=${items.length * 100}%`,
+      scrub: 1,
+      invalidateOnRefresh: true,
+    },
+    defaults: { ease: "none" },
+  });
+
+  // Animate each item
+  items.forEach((item, index) => {
+    if (index !== items.length - 1) {
+      tl.to(item, {
+        scale: 0.9,
+        opacity: 0,
+      }).to(
+        items[index + 1],
+        {
+          xPercent: 0,
+        },
+        "<"
+      );
+    }
+  });
+}
+
+// Call the function
+initScroll();
