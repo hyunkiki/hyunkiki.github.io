@@ -353,6 +353,70 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
+#main #contact .contact_last_intro .contact_wonder {
+  font-size: 20px;
+}
+#main #contact .contact_link {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main #contact .contact_link .link_lst {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main #contact .contact_link .link_lst a {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+#main #contact .contact_link .link_lst a:hover .icon {
+  color: #000;
+  transform: rotateY(360deg);
+}
+#main #contact .contact_link .link_lst a:hover::before {
+  top: 0;
+}
+#main #contact .contact_link .link_lst a .icon {
+  position: relative;
+  color: #fff;
+  transition: 0.5s;
+  z-index: 3;
+}
+#main #contact .contact_link .link_lst a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: 2;
+}
+#main #contact .contact_link .link_lst .link_more {
+  margin-top: 10px;
+  color: #fff;
+  opacity: 0;
+}
+#main #contact .contact_link .link_lst:hover .link_more {
+  opacity: 1;
+  transition: 1.5s all;
+}
 
 #footer {
   background: #000;

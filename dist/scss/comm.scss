@@ -357,6 +357,74 @@ body {
         font-weight: bold;
         margin-bottom: 10px;
       }
+      .contact_wonder {
+        font-size: 20px;
+      }
+    }
+    .contact_link {
+      display: flex;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .link_lst {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+          width: 80px;
+          height: 80px;
+          background-color: transparent;
+          text-align: center;
+          line-height: 80px;
+          font-size: 35px;
+          margin: 0 10px;
+          display: block;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          border: 3px solid #fff;
+          z-index: 1;
+          &:hover {
+            .icon {
+              color: #000;
+              transform: rotateY(360deg);
+            }
+            &::before {
+              top: 0;
+            }
+          }
+          .icon {
+            position: relative;
+            color: #fff;
+            transition: 0.5s;
+            z-index: 3;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: 0.5s;
+            z-index: 2;
+          }
+        }
+        .link_more {
+          margin-top: 10px;
+          color: #fff;
+          opacity: 0;
+        }
+        &:hover {
+          .link_more {
+            opacity: 1;
+            transition: 1.5s all;
+          }
+        }
+      }
     }
   }
 }
