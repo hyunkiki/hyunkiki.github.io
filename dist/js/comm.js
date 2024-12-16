@@ -28,28 +28,43 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
 
 //skill 부분
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.create({
-  trigger: "#main #skill",
-  start: "top top",
-  end: "bottom bottom",
-  pin: "#main #skill .left",
-  scrub: 1,
+// ScrollTrigger 초기화 함수
+function initScrollTrigger() {
+  ScrollTrigger.create({
+    trigger: "#main .skill",
+    start: "top top",
+    end: "bottom bottom",
+    pin: "#main .skill .left",
+    scrub: 1,
 
-  onEnter: function () {
-    $("#header").addClass("section2");
-  },
-  onLeaveBack: function () {
-    $("#header").removeClass("section2");
-  },
-});
+    onEnter: function () {
+      $("#header").addClass("section2");
+    },
+    onLeaveBack: function () {
+      $("#header").removeClass("section2");
+    },
+  });
+}
 
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-//project
+// 미디어쿼리를 기반으로 ScrollTrigger 작동 제어
+const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+function handleMediaChange(e) {
+  if (!e.matches) {
+    // 1024px 초과: ScrollTrigger 활성화
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // 기존 트리거 제거
+    initScrollTrigger();
+  } else {
+    // 1024px 이하: ScrollTrigger 비활성화
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  }
+}
+
+// 초기 실행 및 이벤트 리스너 추가
+handleMediaChange(mediaQuery);
+mediaQuery.addEventListener("change", handleMediaChange);
+
+//project부분
 gsap.registerPlugin(ScrollTrigger);
 // Select the HTML elements needed for the animation
 const horizontalSection = document.querySelector(".horizontal_section");

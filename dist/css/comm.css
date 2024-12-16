@@ -33,6 +33,7 @@ body {
 }
 #header .header_lst_wr .header_lst .header_link .hr_contact_img {
   opacity: 0.3;
+  width: 100%;
 }
 #header .header_lst_wr .header_lst .header_link .hr_contact_img:hover {
   opacity: 1;
@@ -44,25 +45,25 @@ body {
   list-style-type: none;
 }
 
-#main #intro {
+#main .intro {
   width: 100%;
   background: #000;
 }
-#main #intro .welcome_wr {
+#main .intro .welcome_wr {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 150px;
 }
-#main #intro .welcome_wr .welcome_img {
+#main .intro .welcome_wr .welcome_img {
   margin-top: 150px;
   width: 500px;
   opacity: 0;
   scale: 0.3;
   border-radius: 50%;
 }
-#main #intro .welcome_wr .welcome_txt01 {
+#main .intro .welcome_wr .welcome_txt01 {
   margin-top: 20px;
   font-size: 70px;
   color: #fff;
@@ -70,7 +71,7 @@ body {
   opacity: 0;
   font-family: "Lora", serif;
 }
-#main #intro .welcome_wr .welcome_txt02 {
+#main .intro .welcome_wr .welcome_txt02 {
   margin-top: 20px;
   font-size: 50px;
   color: #fff;
@@ -78,186 +79,183 @@ body {
   opacity: 0;
   font-family: "Lora", serif;
 }
-#main #intro .profile_wr {
+#main .intro .profile_wr {
   height: 100%;
   display: flex;
   justify-content: space-between;
   padding: 150px 0;
   align-items: center;
 }
-#main #intro .profile_wr .pro_img {
+#main .intro .profile_wr .pro_img {
   width: 35%;
 }
-#main #intro .profile_wr .pro_img .profile_img {
+#main .intro .profile_wr .pro_img .profile_img {
   width: 100%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-#main #intro .profile_wr .txt_box {
+#main .intro .profile_wr .txt_box {
   width: 55%;
   display: flex;
   flex-direction: column;
 }
-#main #intro .profile_wr .txt_box .info .profile_tit {
+#main .intro .profile_wr .txt_box .info .profile_tit {
   font-size: 30px;
   margin-bottom: 20px;
 }
-#main #intro .profile_wr .txt_box .info .profile_tit::before {
+#main .intro .profile_wr .txt_box .info .profile_tit::before {
   content: "\f129";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-#main #intro .profile_wr .txt_box .info .lst {
+#main .intro .profile_wr .txt_box .info .lst {
   list-style-type: none;
 }
-#main #intro .profile_wr .txt_box .info .lst li {
+#main .intro .profile_wr .txt_box .info .lst li {
   padding: 6px 0;
   font-size: 18px;
 }
-#main #intro .profile_wr .txt_box .info .lst li span {
+#main .intro .profile_wr .txt_box .info .lst li span {
   width: 15%;
   display: inline-block;
   font-size: 18px;
 }
-#main #intro .profile_wr .txt_box .certificate {
+#main .intro .profile_wr .txt_box .certificate {
   padding: 30px 0;
 }
-#main #intro .profile_wr .txt_box .certificate .profile_tit {
+#main .intro .profile_wr .txt_box .certificate .profile_tit {
   font-size: 30px;
   margin-bottom: 20px;
 }
-#main #intro .profile_wr .txt_box .certificate .profile_tit::before {
+#main .intro .profile_wr .txt_box .certificate .profile_tit::before {
   content: "\f559";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-#main #intro .profile_wr .txt_box .certificate .lst {
+#main .intro .profile_wr .txt_box .certificate .lst {
   list-style-type: none;
 }
-#main #intro .profile_wr .txt_box .certificate li {
+#main .intro .profile_wr .txt_box .certificate li {
   padding: 6px 0;
   font-size: 18px;
 }
-#main #intro .profile_wr .txt_box .certificate li span {
+#main .intro .profile_wr .txt_box .certificate li span {
   width: 15%;
   display: inline-block;
   font-size: 18px;
 }
-#main #intro .profile_wr .txt_box .education .profile_tit {
+#main .intro .profile_wr .txt_box .education .profile_tit {
   font-size: 30px;
   margin-bottom: 20px;
 }
-#main #intro .profile_wr .txt_box .education .profile_tit::before {
+#main .intro .profile_wr .txt_box .education .profile_tit::before {
   content: "\f549";
   font-family: "Line Awesome Free";
   font-weight: 900;
   margin-right: 10px;
 }
-#main #intro .profile_wr .txt_box .education .lst {
+#main .intro .profile_wr .txt_box .education .lst {
   list-style-type: none;
 }
-#main #intro .profile_wr .txt_box .education li {
+#main .intro .profile_wr .txt_box .education li {
   padding: 6px 0;
   font-size: 18px;
 }
-#main #intro .profile_wr .txt_box .education li span {
+#main .intro .profile_wr .txt_box .education li span {
   width: 15%;
   display: inline-block;
   font-size: 18px;
 }
-#main #intro .profile_wr .ab_bottom_txt {
+#main .intro .profile_wr .ab_bottom_txt {
   padding-top: 30px;
 }
-#main #intro .profile_wr .ab_bottom_txt h2 {
+#main .intro .profile_wr .ab_bottom_txt h2 {
   font-size: 30px;
   margin-bottom: 20px;
   color: #fff;
 }
-#main #intro .profile_wr .ab_bottom_txt p {
+#main .intro .profile_wr .ab_bottom_txt p {
   line-height: 1.9;
   font-size: 18px;
   color: #fff;
 }
-#main #skill {
+#main .skill {
   width: 100%;
   height: 100%;
   background: #000;
   padding: 100px 0;
   position: relative;
 }
-#main #skill .skill_wr {
+#main .skill .skill_wr {
   list-style-type: none;
   display: flex;
   align-items: flex-start;
 }
-#main #skill .skill_wr .left_wr {
+#main .skill .skill_wr .left_wr {
   color: #fff;
   width: 50%;
 }
-#main #skill .skill_wr .left_wr .left {
+#main .skill .skill_wr .left_wr .left {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#main #skill .skill_wr .left_wr .left .skill_tit {
+#main .skill .skill_wr .left_wr .left .skill_tit {
   font-size: 60px;
   color: #fff;
   margin-bottom: 20px;
 }
-#main #skill .skill_wr .left_wr .left .skill_sub {
-  font-size: 20px;
-}
-#main #skill .skill_wr .right_wr {
+#main .skill .skill_wr .right_wr {
   color: #fff;
   width: 50%;
 }
-#main #skill .skill_wr .right_wr .right {
+#main .skill .skill_wr .right_wr .right {
   margin: 150px 0;
 }
-#main #skill .skill_wr .right_wr .right:first-child {
+#main .skill .skill_wr .right_wr .right:first-child {
   margin: 0;
 }
-#main #skill .skill_wr .right_wr .right .right_img {
+#main .skill .skill_wr .right_wr .right .right_img {
   width: 15%;
   margin-bottom: 20px;
 }
-#main #skill .skill_wr .right_wr .right .skill_mini_sub {
+#main .skill .skill_wr .right_wr .right .skill_mini_sub {
   font-size: 20px;
   line-height: 1.5;
 }
-#main #project {
+#main .project {
   padding: 100px 0;
   background: #000;
   position: relative;
 }
-#main #project #section {
+#main .project #section {
   overflow: hidden;
 }
-#main #project .wrapper {
+#main .project .wrapper {
   height: 100dvh;
 }
-#main #project .wrapper .lst {
+#main .project .wrapper .lst {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
   display: flex;
   position: relative;
 }
-#main #project .wrapper .lst .item {
+#main .project .wrapper .lst .item {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   flex: none;
   grid-template-rows: auto;
   grid-template-columns: 50% 50%;
   grid-auto-columns: 1fr;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: grid;
   position: absolute;
   inset: 0%;
 }
-#main #project .wrapper .lst .item .item_content {
+#main .project .wrapper .lst .item .item_content {
   color: #fff;
   flex-flow: column;
   justify-content: center;
@@ -266,30 +264,30 @@ body {
   display: flex;
   text-align: center;
 }
-#main #project .wrapper .lst .item .item_content .item_num {
+#main .project .wrapper .lst .item .item_content .item_num {
   font-size: 30px;
 }
-#main #project .wrapper .lst .item .item_content .item_tit {
+#main .project .wrapper .lst .item .item_content .item_tit {
   font-size: 60px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#main #project .wrapper .lst .item .item_content .item_pg_ct {
+#main .project .wrapper .lst .item .item_content .item_pg_ct {
   padding-bottom: 20px;
   font-size: 25px;
 }
-#main #project .wrapper .lst .item .item_content .item_exp {
+#main .project .wrapper .lst .item .item_content .item_exp {
   font-size: 20px;
   line-height: 1.8;
 }
-#main #project .wrapper .lst .item .item_content .site {
+#main .project .wrapper .lst .item .item_content .site {
   list-style-type: none;
   width: 100%;
   display: flex;
   margin-top: 50px;
   justify-content: center;
 }
-#main #project .wrapper .lst .item .item_content .site .link {
+#main .project .wrapper .lst .item .item_content .site .link {
   position: relative;
   display: block;
   width: 130px;
@@ -302,7 +300,7 @@ body {
   padding: 20px 0px;
   margin-right: 20px;
 }
-#main #project .wrapper .lst .item .item_content .site .link::before {
+#main .project .wrapper .lst .item .item_content .site .link::before {
   position: absolute;
   content: "\f061";
   font-family: "Line Awesome Free";
@@ -316,60 +314,60 @@ body {
   width: 40px;
   transition: all 0.3s linear 0s;
 }
-#main #project .wrapper .lst .item .item_content .site .link:hover {
+#main .project .wrapper .lst .item .item_content .site .link:hover {
   text-indent: -20px;
 }
-#main #project .wrapper .lst .item .item_content .site .link:hover:before {
+#main .project .wrapper .lst .item .item_content .site .link:hover:before {
   opacity: 1;
   text-indent: 0;
 }
-#main #project .wrapper .lst .item .item_img {
+#main .project .wrapper .lst .item .item_img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-#main #contact {
+#main .contact {
   width: 100%;
   height: 50vh;
   background: #000;
   padding: 100px 0;
   position: relative;
 }
-#main #contact .contact_tit {
+#main .contact .contact_tit {
   color: #fff;
   font-size: 150px;
   margin-bottom: 20px;
   text-align: center;
 }
-#main #contact .contact_last_intro {
+#main .contact .contact_last_intro {
   font-size: 18px;
   text-align: center;
   line-height: 1.5;
   color: #fff;
 }
-#main #contact .contact_last_intro .contact_thank {
+#main .contact .contact_last_intro .contact_thank {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-#main #contact .contact_last_intro .contact_wonder {
+#main .contact .contact_last_intro .contact_wonder {
   font-size: 20px;
 }
-#main #contact .contact_link {
+#main .contact .contact_link {
   display: flex;
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#main #contact .contact_link .link_lst {
+#main .contact .contact_link .link_lst {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#main #contact .contact_link .link_lst a {
+#main .contact .contact_link .link_lst a {
   width: 80px;
   height: 80px;
   background-color: transparent;
@@ -384,20 +382,20 @@ body {
   border: 3px solid #fff;
   z-index: 1;
 }
-#main #contact .contact_link .link_lst a:hover .icon {
+#main .contact .contact_link .link_lst a:hover .icon {
   color: #000;
   transform: rotateY(360deg);
 }
-#main #contact .contact_link .link_lst a:hover::before {
+#main .contact .contact_link .link_lst a:hover::before {
   top: 0;
 }
-#main #contact .contact_link .link_lst a .icon {
+#main .contact .contact_link .link_lst a .icon {
   position: relative;
   color: #fff;
   transition: 0.5s;
   z-index: 3;
 }
-#main #contact .contact_link .link_lst a::before {
+#main .contact .contact_link .link_lst a::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -408,12 +406,12 @@ body {
   transition: 0.5s;
   z-index: 2;
 }
-#main #contact .contact_link .link_lst .link_more {
+#main .contact .contact_link .link_lst .link_more {
   margin-top: 10px;
   color: #fff;
   opacity: 0;
 }
-#main #contact .contact_link .link_lst:hover .link_more {
+#main .contact .contact_link .link_lst:hover .link_more {
   opacity: 1;
   transition: 1.5s all;
 }
@@ -439,4 +437,222 @@ body {
 }
 #footer .ft_box .ft_copyright {
   font-size: 16px;
+}
+
+@media screen and (max-width: 1440px) {
+  #main .intro .welcome_wr .welcome_img {
+    width: 450px;
+  }
+  #main .intro .welcome_wr .welcome_txt01 {
+    font-size: 65px;
+  }
+  #main .intro .welcome_wr .welcome_txt02 {
+    font-size: 45px;
+  }
+  #main .intro .profile_wr .ab_bottom_txt h2 {
+    font-size: 26px;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_tit {
+    font-size: 56px;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_sub {
+    font-size: 18px;
+  }
+  #main .skill .skill_wr .right_wr .right {
+    margin: 130px 0;
+  }
+  #main .skill .skill_wr .right_wr .right .skill_mini_sub {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  #main .project .wrapper .lst .item .item_content .item_num {
+    font-size: 28px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_tit {
+    font-size: 56px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_pg_ct {
+    font-size: 20px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_exp {
+    font-size: 18px;
+  }
+  #main .project .wrapper .lst .item .item_content .site .link {
+    font-size: 18px;
+  }
+  #main .contact .contact_tit {
+    font-size: 130px;
+  }
+  #main .contact .contact_last_intro .contact_thank {
+    font-size: 20px;
+  }
+  #main .contact .contact_last_intro .contact_wonder {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #main .intro .profile_wr .ab_bottom_txt h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 100px;
+  }
+  #main .intro .profile_wr {
+    flex-direction: column;
+  }
+  #main .intro .profile_wr .pro_img {
+    width: 50%;
+  }
+  #main .intro .profile_wr .txt_box {
+    width: 100%;
+  }
+  #main .intro .profile_wr .ab_bottom_txt h2 {
+    font-size: 30px;
+  }
+  #main .skill .skill_wr {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main .skill .skill_wr .left_wr {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_tit {
+    font-size: 60px;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_sub {
+    font-size: 20px;
+  }
+  #main .skill .skill_wr .right_wr {
+    width: 100%;
+  }
+  #main .skill .skill_wr .right_wr .right .skill_mini_sub {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    padding: 0 50px;
+  }
+  section {
+    overflow: hidden;
+  }
+  #main .intro .welcome_wr .welcome_img {
+    width: 400px;
+  }
+  #main .intro .welcome_wr .welcome_txt01 {
+    font-size: 60px;
+  }
+  #main .intro .welcome_wr .welcome_txt02 {
+    font-size: 40px;
+  }
+  #main .intro .profile_wr .ab_bottom_txt h2 {
+    font-size: 26px;
+  }
+  #main .intro .profile_wr .pro_img {
+    width: 55%;
+  }
+  #main .skill .skill_wr .left_wr .left {
+    font-size: 18px;
+  }
+  #main .skill .skill_wr .right_wr .right .skill_mini_sub {
+    font-size: 18px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_num {
+    font-size: 26px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_tit {
+    font-size: 52px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_pg_ct {
+    font-size: 16px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_exp {
+    font-size: 16px;
+  }
+  #main .project .wrapper .lst .item .item_content .site .link {
+    font-size: 16px;
+  }
+  #main .contact .contact_tit {
+    font-size: 110px;
+  }
+  #main .contact .contact_last_intro .contact_thank {
+    font-size: 18px;
+  }
+  #main .contact .contact_last_intro .contact_wonder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .inner {
+    padding: 0 20px;
+  }
+  #header {
+    padding: 0 50px;
+  }
+  #header .header_lst_wr .header_lst .header_link .hr_contact_img {
+    width: 90%;
+  }
+  #header .header_lst_wr .header_lst:last-child {
+    margin-left: 10px;
+  }
+  #main .intro .welcome_wr .welcome_img {
+    width: 350px;
+  }
+  #main .intro .welcome_wr .welcome_txt01 {
+    font-size: 45px;
+  }
+  #main .intro .welcome_wr .welcome_txt02 {
+    font-size: 30px;
+  }
+  #main .intro .profile_wr .ab_bottom_txt h2 {
+    font-size: 16px;
+  }
+  #main .intro .profile_wr .ab_bottom_txt p {
+    font-size: 16px;
+  }
+  #main .intro .profile_wr .pro_img {
+    width: 70%;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_tit {
+    font-size: 56px;
+  }
+  #main .skill .skill_wr .left_wr .left .skill_sub {
+    font-size: 18px;
+  }
+  #main .skill .skill_wr .right_wr .right .skill_mini_sub {
+    font-size: 16px;
+  }
+  #main .project .wrapper .lst .item {
+    grid-template-columns: 100%;
+  }
+  #main .project .wrapper .lst .item .item_content .item_num {
+    font-size: 24px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_tit {
+    font-size: 48px;
+  }
+  #main .project .wrapper .lst .item .item_content .item_pg_ct {
+    display: none;
+  }
+  #main .contact .contact_tit {
+    font-size: 70px;
+  }
+  #main .contact .contact_last_intro .contact_thank {
+    font-size: 16px;
+  }
+  #main .contact .contact_link {
+    bottom: 15%;
+  }
+  #main .contact .contact_link .link_lst .link_more {
+    display: none;
+  }
+  #footer {
+    padding: 0 50px;
+  }
+  #footer .ft_box .ft_txt {
+    display: none;
+  }
 }/*# sourceMappingURL=comm.css.map */

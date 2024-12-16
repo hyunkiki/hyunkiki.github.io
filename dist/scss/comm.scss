@@ -30,6 +30,7 @@ body {
         position: relative;
         .hr_contact_img {
           opacity: 0.3;
+          width: 100%;
           &:hover {
             opacity: 1;
           }
@@ -46,7 +47,7 @@ body {
 }
 
 #main {
-  #intro {
+  .intro {
     width: 100%;
     background: #000;
     .welcome_wr {
@@ -186,7 +187,7 @@ body {
       }
     }
   }
-  #skill {
+  .skill {
     width: 100%;
     height: 100%;
     background: #000;
@@ -207,9 +208,6 @@ body {
             font-size: 60px;
             color: #fff;
             margin-bottom: 20px;
-          }
-          .skill_sub {
-            font-size: 20px;
           }
         }
       }
@@ -233,7 +231,7 @@ body {
       }
     }
   }
-  #project {
+  .project {
     padding: 100px 0;
     background: #000;
     position: relative;
@@ -255,7 +253,7 @@ body {
           grid-template-rows: auto;
           grid-template-columns: 50% 50%;
           grid-auto-columns: 1fr;
-          width: 100%;
+          width: 100vw;
           height: 100%;
           display: grid;
           position: absolute;
@@ -335,7 +333,7 @@ body {
       }
     }
   }
-  #contact {
+  .contact {
     width: 100%;
     height: 50vh;
     background: #000;
@@ -450,11 +448,359 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  #main {
+    .intro {
+      .welcome_wr {
+        .welcome_img {
+          width: 450px;
+        }
+        .welcome_txt01 {
+          font-size: 65px;
+        }
+        .welcome_txt02 {
+          font-size: 45px;
+        }
+      }
+      .profile_wr {
+        .ab_bottom_txt {
+          h2 {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    .skill {
+      .skill_wr {
+        .left_wr {
+          .left {
+            .skill_tit {
+              font-size: 56px;
+            }
+            .skill_sub {
+              font-size: 18px;
+            }
+          }
+        }
+        .right_wr {
+          .right {
+            margin: 130px 0;
+            .skill_mini_sub {
+              font-size: 18px;
+              line-height: 1.7;
+            }
+          }
+        }
+      }
+    }
+    .project {
+      .wrapper {
+        .lst {
+          .item {
+            .item_content {
+              .item_num {
+                font-size: 28px;
+              }
+              .item_tit {
+                font-size: 56px;
+              }
+              .item_pg_ct {
+                font-size: 20px;
+              }
+              .item_exp {
+                font-size: 18px;
+              }
+              .site {
+                .link {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .contact_tit {
+        font-size: 130px;
+      }
+      .contact_last_intro {
+        .contact_thank {
+          font-size: 20px;
+        }
+        .contact_wonder {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1280px) {
+  #main {
+    .intro {
+      .profile_wr {
+        .ab_bottom_txt {
+          h2 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 100px;
+  }
+  #main {
+    .intro {
+      .profile_wr {
+        flex-direction: column;
+        .pro_img {
+          width: 50%;
+        }
+        .txt_box {
+          width: 100%;
+        }
+        .ab_bottom_txt {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .skill {
+      .skill_wr {
+        flex-direction: column;
+        align-items: center;
+        .left_wr {
+          width: 100%;
+          margin-bottom: 20px;
+          .left {
+            .skill_tit {
+              font-size: 60px;
+            }
+            .skill_sub {
+              font-size: 20px;
+            }
+          }
+        }
+        .right_wr {
+          width: 100%;
+          .right {
+            .skill_mini_sub {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
+  .inner {
+    padding: 0 50px;
+  }
+  section {
+    overflow: hidden;
+  }
+  #main {
+    .intro {
+      .welcome_wr {
+        .welcome_img {
+          width: 400px;
+        }
+        .welcome_txt01 {
+          font-size: 60px;
+        }
+        .welcome_txt02 {
+          font-size: 40px;
+        }
+      }
+      .profile_wr {
+        .ab_bottom_txt {
+          h2 {
+            font-size: 26px;
+          }
+        }
+        .pro_img {
+          width: 55%;
+        }
+      }
+    }
+    .skill {
+      .skill_wr {
+        .left_wr {
+          .left {
+            font-size: 18px;
+          }
+        }
+        .right_wr {
+          .right {
+            .skill_mini_sub {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .project {
+      .wrapper {
+        .lst {
+          .item {
+            .item_content {
+              .item_num {
+                font-size: 26px;
+              }
+              .item_tit {
+                font-size: 52px;
+              }
+              .item_pg_ct {
+                font-size: 16px;
+              }
+              .item_exp {
+                font-size: 16px;
+              }
+              .site {
+                .link {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .contact_tit {
+        font-size: 110px;
+      }
+      .contact_last_intro {
+        .contact_thank {
+          font-size: 18px;
+        }
+        .contact_wonder {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
 }
 @media screen and (max-width: 428px) {
+  .inner {
+    padding: 0 20px;
+  }
+  #header {
+    padding: 0 50px;
+    .header_lst_wr {
+      .header_lst {
+        .header_link {
+          .hr_contact_img {
+            width: 90%;
+          }
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  #main {
+    .intro {
+      .welcome_wr {
+        .welcome_img {
+          width: 350px;
+        }
+        .welcome_txt01 {
+          font-size: 45px;
+        }
+        .welcome_txt02 {
+          font-size: 30px;
+        }
+      }
+      .profile_wr {
+        .ab_bottom_txt {
+          h2 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .pro_img {
+          width: 70%;
+        }
+      }
+    }
+    .skill {
+      .skill_wr {
+        .left_wr {
+          .left {
+            .skill_tit {
+              font-size: 56px;
+            }
+            .skill_sub {
+              font-size: 18px;
+            }
+          }
+        }
+        .right_wr {
+          .right {
+            .skill_mini_sub {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .project {
+      .wrapper {
+        .lst {
+          .item {
+            grid-template-columns: 100%;
+            .item_content {
+              .item_num {
+                font-size: 24px;
+              }
+              .item_tit {
+                font-size: 48px;
+              }
+              .item_pg_ct {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .contact_tit {
+        font-size: 70px;
+      }
+      .contact_last_intro {
+        .contact_thank {
+          font-size: 16px;
+        }
+      }
+      .contact_link {
+        bottom: 15%;
+        .link_lst {
+          .link_more {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    padding: 0 50px;
+    .ft_box {
+      .ft_txt {
+        display: none;
+      }
+    }
+  }
 }
