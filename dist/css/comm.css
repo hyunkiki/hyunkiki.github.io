@@ -227,6 +227,40 @@ body {
   font-size: 20px;
   line-height: 1.5;
 }
+#main .sns_design {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  padding: 100px 0;
+  position: relative;
+}
+#main .sns_design .sns_design_tit {
+  font-size: 60px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+#main .sns_design .swiper {
+  width: 100%;
+  height: 100%;
+}
+#main .sns_design .swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+#main .sns_design .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .sns_design .swiper .swiper-slide .sns_design_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #main .project {
   padding: 100px 0;
   background: #000;
@@ -463,6 +497,9 @@ body {
     font-size: 18px;
     line-height: 1.7;
   }
+  #main .sns_design .sns_design_tit {
+    font-size: 56px;
+  }
   #main .project .wrapper .lst .item .item_content .item_num {
     font-size: 28px;
   }
@@ -546,6 +583,12 @@ body {
   }
   #main .skill .skill_wr .right_wr .right:first-child {
     margin-top: 100px;
+  }
+  #main .sns_design {
+    padding: 50px 0;
+  }
+  #main .sns_design .sns_design_tit {
+    font-size: 60px;
   }
   #main .project {
     padding: 50px 0;
@@ -690,6 +733,9 @@ body {
   }
   #main .skill .skill_wr .right_wr .right .skill_mini_sub {
     font-size: 16px;
+  }
+  #main .sns_design .sns_design_tit {
+    font-size: 56px;
   }
   #main .project .wrapper .lst .item {
     grid-template-columns: 100%;

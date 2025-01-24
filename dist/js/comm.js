@@ -1,13 +1,13 @@
-//index.html
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// //index.html
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-}); //header에 메뉴의 a태그를 누르면 해당영역으로 부드럽게 이동하기
+//     document.querySelector(this.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// }); //header에 메뉴의 a태그를 누르면 해당영역으로 부드럽게 이동하기
 
 gsap.registerPlugin(ScrollTrigger);
 const Intromove = gsap.timeline();
@@ -45,6 +45,36 @@ function initScrollTrigger() {
     },
   });
 }
+
+//sns_design부분
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1, // 기본값: 가장 작은 화면
+  spaceBetween: 30, // 슬라이드 간의 간격
+  loop: true, // 무한 루프 활성화
+  speed: 5000, // 슬라이드 전환 속도 (더 느리게 설정)
+  autoplay: {
+    delay: 0, // 지연 시간 없이 연속 이동
+    disableOnInteraction: false, // 사용자 조작 후에도 자동 이동 유지
+  },
+  freeMode: true, // 자유롭게 스크롤하는 느낌
+  freeModeMomentum: false, // 모멘텀 효과를 비활성화하여 끊김 방지
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  breakpoints: {
+    600: {
+      // 600px 이상일 때
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      // 1024px 이상일 때
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
 
 // 미디어쿼리를 기반으로 ScrollTrigger 작동 제어
 const mediaQuery = window.matchMedia("(max-width: 1024px)");
