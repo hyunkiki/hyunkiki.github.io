@@ -26,6 +26,37 @@ Intromove.to([".welcome_wr .welcome_txt01", ".welcome_wr .welcome_txt02"], {
   ease: "bounce.out",
 }); //intro부분
 
+//profile부분
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".profile_wr",
+      start: "top 80%",
+      end: "top 30%",
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  // 프로필 이미지 애니메이션
+  tl.fromTo(
+    ".pro_img",
+    { opacity: 0, x: -100 },
+    { opacity: 1, x: 0, duration: 3, ease: "power2.out" },
+    0 // 동시에 시작
+  );
+
+  // 텍스트 박스 애니메이션 (연결된 순차 애니메이션)
+  tl.fromTo(
+    ".txt_box",
+    { opacity: 0, x: 100 },
+    { opacity: 1, x: 0, duration: 3, ease: "power2.out" },
+    0 // 동시에 시작
+  );
+});
+
 //skill 부분
 gsap.registerPlugin(ScrollTrigger);
 // ScrollTrigger 초기화 함수
