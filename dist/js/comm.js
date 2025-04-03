@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top 80%",
       end: "top 30%",
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
 
@@ -41,17 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 3. 스킬 섹션 ScrollTrigger 설정 함수
-function initScrollTrigger() {
-  ScrollTrigger.create({
-    trigger: "#main .skill",
-    start: "top top",
-    end: "bottom bottom",
-    pin: "#main .skill .left",
-    scrub: 1,
-    onEnter: () => $("#header").addClass("section2"),
-    onLeaveBack: () => $("#header").removeClass("section2"),
-  });
-}
 
 // 4. SNS 디자인 Swiper 설정
 var swiper = new Swiper(".mySwiper", {
@@ -67,20 +56,7 @@ var swiper = new Swiper(".mySwiper", {
     1024: { slidesPerView: 3, spaceBetween: 30 },
   },
 });
-
-// 5. 미디어쿼리를 기반으로 ScrollTrigger 작동 제어
-const mediaQuery = window.matchMedia("(max-width: 1024px)");
-
-function handleMediaChange(e) {
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // 기존 트리거 삭제
-  if (!e.matches) initScrollTrigger(); // 1024px 초과일 때 ScrollTrigger 활성화
-}
-
-// 초기 실행 및 리스너 등록
-handleMediaChange(mediaQuery);
-mediaQuery.addEventListener("change", handleMediaChange);
-
-// 6. 프로젝트 섹션 가로 스크롤 애니메이션
+// 5. 프로젝트 섹션 가로 스크롤 애니메이션
 const horizontalSection = document.querySelector(".horizontal_section");
 const wrapper = horizontalSection.querySelector(".wrapper");
 const items = wrapper.querySelectorAll(".item");

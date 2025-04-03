@@ -234,17 +234,54 @@ body {
       }
     }
   }
+  .banner_design {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    padding: 100px 0;
+    position: relative;
+    .banner_tit_wr {
+      display: flex;
+      .banner_tit {
+        font-size: 120px;
+        color: #fff;
+      }
+      .ban_tit_num {
+        color: #fff;
+        padding-top: 30px;
+        margin-left: 10px;
+      }
+    }
+    .banner_img_wr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .banner_img_tit {
+        color: #fff;
+        font-size: 25px;
+      }
+    }
+  }
   .sns_design {
     width: 100%;
     height: 100%;
     background: #000;
     padding: 100px 0;
     position: relative;
-    .sns_design_tit {
-      font-size: 60px;
-      color: #fff;
-      padding-bottom: 40px;
+    .sns_tit_wr {
+      display: flex;
+      .sns_tit {
+        font-size: 120px;
+        color: #fff;
+        padding-bottom: 40px;
+      }
+      .sns_tit_num {
+        color: #fff;
+        padding-top: 30px;
+        margin-left: 10px;
+      }
     }
+
     .swiper {
       width: 100%;
       height: 100%;
