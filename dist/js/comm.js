@@ -50,7 +50,7 @@ const btl = gsap.timeline({
     start: "top 100%",
     end: "bottom 90%",
     scrub: 1,
-    markers: true,
+    markers: false,
   },
 });
 btl.fromTo(
