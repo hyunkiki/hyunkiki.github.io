@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Pretendard";
 }
@@ -9,7 +8,8 @@ body {
 }
 
 .inner {
-  padding: 0 150px;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 #header {
@@ -235,63 +235,22 @@ body {
   padding: 100px 0;
   position: relative;
 }
-#main .banner_design .banner_tit_wr {
-  display: flex;
-}
 #main .banner_design .banner_tit_wr .banner_tit {
   font-size: 120px;
   color: #fff;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  overflow: hidden;
-}
-#main .banner_design .banner_tit_wr .banner_tit .letter {
-  display: inline-block;
-  transform-origin: center bottom;
-}
-#main .banner_design .banner_tit_wr .ban_tit_num {
-  color: #fff;
-  padding-top: 30px;
-  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #main .banner_design .banner_img_wr {
-  grid-column-gap: 8rem;
-  grid-row-gap: 8rem;
-  flex-direction: column;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-#main .banner_design .banner_img_box .banner_img_tit {
-  color: #fff;
-  font-size: 25px;
-}
-#main .banner_design .box1,
-#main .banner_design .box2,
-#main .banner_design .box3,
-#main .banner_design .box4 {
-  overflow: hidden; /* border-radius 유지 */
-}
-#main .banner_design .box1 .ban1,
-#main .banner_design .box1 .ban2,
-#main .banner_design .box1 .ban3,
-#main .banner_design .box1 .ban4,
-#main .banner_design .box2 .ban1,
-#main .banner_design .box2 .ban2,
-#main .banner_design .box2 .ban3,
-#main .banner_design .box2 .ban4,
-#main .banner_design .box3 .ban1,
-#main .banner_design .box3 .ban2,
-#main .banner_design .box3 .ban3,
-#main .banner_design .box3 .ban4,
-#main .banner_design .box4 .ban1,
-#main .banner_design .box4 .ban2,
-#main .banner_design .box4 .ban3,
-#main .banner_design .box4 .ban4 {
+#main .banner_design .banner_img_wr .banner_img_box {
   width: 100%;
-  height: auto;
-  -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
-          clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+#main .banner_design .banner_img_wr .banner_img_box .banner_img {
+  width: 100%;
 }
 #main .sns_design {
   width: 100%;
@@ -300,18 +259,11 @@ body {
   padding: 100px 0;
   position: relative;
 }
-#main .sns_design .sns_tit_wr {
-  display: flex;
-}
 #main .sns_design .sns_tit_wr .sns_tit {
   font-size: 120px;
   color: #fff;
-  padding-bottom: 40px;
-}
-#main .sns_design .sns_tit_wr .sns_tit_num {
-  color: #fff;
-  padding-top: 30px;
-  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #main .sns_design .swiper {
   width: 100%;

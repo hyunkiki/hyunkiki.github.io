@@ -7,7 +7,8 @@ body {
 }
 
 .inner {
-  padding: 0 150px;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 #header {
@@ -241,51 +242,22 @@ body {
     padding: 100px 0;
     position: relative;
     .banner_tit_wr {
-      display: flex;
       .banner_tit {
         font-size: 120px;
         color: #fff;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        overflow: hidden;
-        .letter {
-          display: inline-block;
-          transform-origin: center bottom;
-        }
-      }
-      .ban_tit_num {
-        color: #fff;
-        padding-top: 30px;
-        margin-left: 10px;
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
     .banner_img_wr {
-      grid-column-gap: 8rem;
-      grid-row-gap: 8rem;
-      flex-direction: column;
-      display: flex;
-    }
-    .banner_img_box {
-      .banner_img_tit {
-        color: #fff;
-        font-size: 25px;
-      }
-    }
-    .box1,
-    .box2,
-    .box3,
-    .box4 {
-      overflow: hidden; /* border-radius 유지 */
-
-      .ban1,
-      .ban2,
-      .ban3,
-      .ban4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .banner_img_box {
         width: 100%;
-        height: auto;
-        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        .banner_img {
+          width: 100%;
+        }
       }
     }
   }
@@ -296,16 +268,11 @@ body {
     padding: 100px 0;
     position: relative;
     .sns_tit_wr {
-      display: flex;
       .sns_tit {
         font-size: 120px;
         color: #fff;
-        padding-bottom: 40px;
-      }
-      .sns_tit_num {
-        color: #fff;
-        padding-top: 30px;
-        margin-left: 10px;
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
 
