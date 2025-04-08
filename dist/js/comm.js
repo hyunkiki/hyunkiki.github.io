@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 3. SNS 디자인 Swiper
+// 3. SNS 디자인 Swiper
 new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -95,26 +96,20 @@ const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal_img");
 const closeBtn = document.querySelector(".close");
 
-document.querySelectorAll(".banner_img, .sns_design_img").forEach((thumb) => {
+// banner_img만 이벤트 등록
+document.querySelectorAll(".banner_img").forEach((thumb) => {
   thumb.addEventListener("click", function () {
     modal.style.display = "flex";
     modalImg.src = this.src;
 
-    if (this.classList.contains("banner_img")) {
-      // 배너 이미지는 원본 사이즈
-      modalImg.style.maxWidth = "none";
-      modalImg.style.width = this.naturalWidth + "px";
-      modalImg.style.height = "auto";
-    } else {
-      // SNS 이미지는 반응형
-      modalImg.style.maxWidth = "90vw";
-      modalImg.style.maxHeight = "90vh";
-      modalImg.style.width = "auto";
-      modalImg.style.height = "auto";
-    }
+    // 원본 사이즈 유지
+    modalImg.style.maxWidth = "none";
+    modalImg.style.width = this.naturalWidth + "px";
+    modalImg.style.height = "auto";
   });
 });
 
+// 닫기 버튼
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
