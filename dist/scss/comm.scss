@@ -89,7 +89,7 @@ body {
       padding: 150px 0;
       align-items: center;
       .pro_img {
-        width: 35%;
+        width: 30%;
         position: relative;
         .profile_img {
           width: 100%;
@@ -116,18 +116,24 @@ body {
         }
       }
       .txt_box {
-        width: 55%;
+        width: 60%;
         .profile_tit {
-          font-family: "Great Vibes", cursive;
+          font-family: "yg-jalnan";
           color: #fff;
           font-size: 60px;
+          margin-bottom: 20px;
+        }
+        .profile_exp {
+          color: #fff;
+          font-size: 30px;
           margin-bottom: 20px;
         }
         .info_box {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          gap: 30px;
-          h3 {
+          gap: 25px;
+          h3,
+          .empty_line {
             font-weight: bold;
             font-size: 30px;
             color: #fff;
@@ -136,9 +142,14 @@ body {
             display: flex;
             align-items: center;
           }
-          .profile_box {
+
+          .profile_box,
+          .license_box,
+          .experience_box {
             margin-top: 10px;
-            .profile_lst {
+            .profile_lst,
+            .license_lst,
+            .experience_lst {
               list-style-type: none;
               color: #fff;
               margin-bottom: 10px;
@@ -152,20 +163,6 @@ body {
           }
         }
       }
-      .ab_bottom_txt {
-        padding-top: 30px;
-        h2 {
-          font-size: 30px;
-          margin-bottom: 20px;
-          color: #fff;
-        }
-        p {
-          line-height: 1.9;
-          font-size: 18px;
-          color: #fff;
-          word-break: keep-all;
-        }
-      }
     }
   }
   .skill {
@@ -174,42 +171,12 @@ body {
     background: #000;
     padding: 100px 0;
     position: relative;
-    .skill_wr {
-      list-style-type: none;
-      display: flex;
-      align-items: flex-start;
-      .left_wr {
+    .skill_tit_wr {
+      .skill_tit {
+        font-size: 120px;
         color: #fff;
-        width: 50%;
-        .left {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .skill_tit {
-            font-size: 60px;
-            color: #fff;
-          }
-        }
-      }
-      .right_wr {
-        color: #fff;
-        width: 50%;
-        .right {
-          margin: 100px 0;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          &:first-child {
-            margin: 0;
-          }
-          .right_img {
-            width: 15%;
-          }
-          .skill_mini_sub {
-            font-size: 20px;
-            line-height: 1.5;
-          }
-        }
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
   }

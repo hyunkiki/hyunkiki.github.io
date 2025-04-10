@@ -90,7 +90,7 @@ body {
   align-items: center;
 }
 #main .intro .profile_wr .pro_img {
-  width: 35%;
+  width: 30%;
   position: relative;
 }
 #main .intro .profile_wr .pro_img .profile_img {
@@ -116,20 +116,26 @@ body {
   z-index: 1;
 }
 #main .intro .profile_wr .txt_box {
-  width: 55%;
+  width: 60%;
 }
 #main .intro .profile_wr .txt_box .profile_tit {
-  font-family: "Great Vibes", cursive;
+  font-family: "yg-jalnan";
   color: #fff;
   font-size: 60px;
+  margin-bottom: 20px;
+}
+#main .intro .profile_wr .txt_box .profile_exp {
+  color: #fff;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 #main .intro .profile_wr .txt_box .info_box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
-#main .intro .profile_wr .txt_box .info_box h3 {
+#main .intro .profile_wr .txt_box .info_box h3,
+#main .intro .profile_wr .txt_box .info_box .empty_line {
   font-weight: bold;
   font-size: 30px;
   color: #fff;
@@ -138,33 +144,37 @@ body {
   display: flex;
   align-items: center;
 }
-#main .intro .profile_wr .txt_box .info_box .profile_box {
+#main .intro .profile_wr .txt_box .info_box .profile_box,
+#main .intro .profile_wr .txt_box .info_box .license_box,
+#main .intro .profile_wr .txt_box .info_box .experience_box {
   margin-top: 10px;
 }
-#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst {
+#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst,
+#main .intro .profile_wr .txt_box .info_box .profile_box .license_lst,
+#main .intro .profile_wr .txt_box .info_box .profile_box .experience_lst,
+#main .intro .profile_wr .txt_box .info_box .license_box .profile_lst,
+#main .intro .profile_wr .txt_box .info_box .license_box .license_lst,
+#main .intro .profile_wr .txt_box .info_box .license_box .experience_lst,
+#main .intro .profile_wr .txt_box .info_box .experience_box .profile_lst,
+#main .intro .profile_wr .txt_box .info_box .experience_box .license_lst,
+#main .intro .profile_wr .txt_box .info_box .experience_box .experience_lst {
   list-style-type: none;
   color: #fff;
   margin-bottom: 10px;
 }
-#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst strong {
+#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst strong,
+#main .intro .profile_wr .txt_box .info_box .profile_box .license_lst strong,
+#main .intro .profile_wr .txt_box .info_box .profile_box .experience_lst strong,
+#main .intro .profile_wr .txt_box .info_box .license_box .profile_lst strong,
+#main .intro .profile_wr .txt_box .info_box .license_box .license_lst strong,
+#main .intro .profile_wr .txt_box .info_box .license_box .experience_lst strong,
+#main .intro .profile_wr .txt_box .info_box .experience_box .profile_lst strong,
+#main .intro .profile_wr .txt_box .info_box .experience_box .license_lst strong,
+#main .intro .profile_wr .txt_box .info_box .experience_box .experience_lst strong {
   display: inline-block;
   font-weight: 500;
   width: 55px;
   margin-right: 15px;
-}
-#main .intro .profile_wr .ab_bottom_txt {
-  padding-top: 30px;
-}
-#main .intro .profile_wr .ab_bottom_txt h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-#main .intro .profile_wr .ab_bottom_txt p {
-  line-height: 1.9;
-  font-size: 18px;
-  color: #fff;
-  word-break: keep-all;
 }
 #main .skill {
   width: 100%;
@@ -173,43 +183,11 @@ body {
   padding: 100px 0;
   position: relative;
 }
-#main .skill .skill_wr {
-  list-style-type: none;
-  display: flex;
-  align-items: flex-start;
-}
-#main .skill .skill_wr .left_wr {
+#main .skill .skill_tit_wr .skill_tit {
+  font-size: 120px;
   color: #fff;
-  width: 50%;
-}
-#main .skill .skill_wr .left_wr .left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#main .skill .skill_wr .left_wr .left .skill_tit {
-  font-size: 60px;
-  color: #fff;
-}
-#main .skill .skill_wr .right_wr {
-  color: #fff;
-  width: 50%;
-}
-#main .skill .skill_wr .right_wr .right {
-  margin: 100px 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-#main .skill .skill_wr .right_wr .right:first-child {
-  margin: 0;
-}
-#main .skill .skill_wr .right_wr .right .right_img {
-  width: 15%;
-}
-#main .skill .skill_wr .right_wr .right .skill_mini_sub {
-  font-size: 20px;
-  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #main .banner_design {
   width: 100%;
