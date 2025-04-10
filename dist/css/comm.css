@@ -91,84 +91,66 @@ body {
 }
 #main .intro .profile_wr .pro_img {
   width: 35%;
+  position: relative;
 }
 #main .intro .profile_wr .pro_img .profile_img {
   width: 100%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+#main .intro .profile_wr .pro_img .profile_img_shadow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #636363;
+  z-index: -1;
+}
+#main .intro .profile_wr .pro_img .profile_img_border {
+  position: absolute;
+  top: -5%;
+  left: -4%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  z-index: 1;
+}
 #main .intro .profile_wr .txt_box {
   width: 55%;
+}
+#main .intro .profile_wr .txt_box .profile_tit {
+  font-family: "Great Vibes", cursive;
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#main .intro .profile_wr .txt_box .info_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+#main .intro .profile_wr .txt_box .info_box h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
-#main .intro .profile_wr .txt_box .info .profile_tit {
-  font-size: 30px;
-  margin-bottom: 20px;
+#main .intro .profile_wr .txt_box .info_box .profile_box {
+  margin-top: 10px;
 }
-#main .intro .profile_wr .txt_box .info .profile_tit::before {
-  content: "\f129";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-#main .intro .profile_wr .txt_box .info .lst {
+#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst {
   list-style-type: none;
+  color: #fff;
+  margin-bottom: 10px;
 }
-#main .intro .profile_wr .txt_box .info .lst li {
-  padding: 6px 0;
-  font-size: 18px;
-}
-#main .intro .profile_wr .txt_box .info .lst li span {
-  width: 15%;
+#main .intro .profile_wr .txt_box .info_box .profile_box .profile_lst strong {
   display: inline-block;
-  font-size: 18px;
-}
-#main .intro .profile_wr .txt_box .certificate {
-  padding: 30px 0;
-}
-#main .intro .profile_wr .txt_box .certificate .profile_tit {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-#main .intro .profile_wr .txt_box .certificate .profile_tit::before {
-  content: "\f559";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-#main .intro .profile_wr .txt_box .certificate .lst {
-  list-style-type: none;
-}
-#main .intro .profile_wr .txt_box .certificate li {
-  padding: 6px 0;
-  font-size: 18px;
-}
-#main .intro .profile_wr .txt_box .certificate li span {
-  width: 15%;
-  display: inline-block;
-  font-size: 18px;
-}
-#main .intro .profile_wr .txt_box .education .profile_tit {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-#main .intro .profile_wr .txt_box .education .profile_tit::before {
-  content: "\f549";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-#main .intro .profile_wr .txt_box .education .lst {
-  list-style-type: none;
-}
-#main .intro .profile_wr .txt_box .education li {
-  padding: 6px 0;
-  font-size: 18px;
-}
-#main .intro .profile_wr .txt_box .education li span {
-  width: 15%;
-  display: inline-block;
-  font-size: 18px;
+  font-weight: 500;
+  width: 55px;
+  margin-right: 15px;
 }
 #main .intro .profile_wr .ab_bottom_txt {
   padding-top: 30px;
