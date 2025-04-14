@@ -118,7 +118,7 @@ body {
       .txt_box {
         width: 60%;
         .profile_tit {
-          font-family: "yg-jalnan";
+          font-family: "Poetsen One", sans-serif;
           color: #fff;
           font-size: 60px;
           margin-bottom: 20px;
@@ -177,6 +177,135 @@ body {
         color: #fff;
         text-align: center;
         margin-bottom: 20px;
+      }
+    }
+    /* 스킬 바 공통 스타일 */
+    .bar {
+      position: relative;
+      background-color: #d8d8d8;
+      height: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    .bar-fill {
+      position: absolute;
+      height: 10px;
+      width: 0; // 💡 초기 상태는 항상 0
+    }
+
+    .bar-title {
+      position: relative;
+      font-size: 1em;
+      text-align: left;
+      margin: 0 0 5px 0;
+      color: #fff;
+    }
+
+    .percent {
+      position: absolute;
+      right: 0;
+    }
+
+    /* 각각의 바 색상 설정 */
+    .bar-fill-html {
+      background-color: #e44d26;
+    }
+    .bar-fill-css {
+      background-color: #379ad6;
+    }
+    .bar-fill-javascript {
+      background-color: #f0db4f;
+    }
+    .bar-fill-photoshop {
+      background-color: #001e36;
+    }
+    .bar-fill-illustrator {
+      background-color: #330000;
+    }
+    .bar-fill-figma {
+      background-color: #a259ff;
+    }
+    .bar-fill-github {
+      background-color: #6a737d;
+    }
+    /* start 클래스가 붙었을 때만 애니메이션 실행 */
+    .bar-fill-html.start {
+      animation: bar-fill-html 2s ease-out forwards;
+    }
+    .bar-fill-css.start {
+      animation: bar-fill-css 2s ease-out forwards;
+    }
+    .bar-fill-javascript.start {
+      animation: bar-fill-javascript 2s ease-out forwards;
+    }
+    .bar-fill-photoshop.start {
+      animation: bar-fill-photoshop 2s ease-out forwards;
+    }
+    .bar-fill-illustrator.start {
+      animation: bar-fill-illustrator 2s ease-out forwards;
+    }
+    .bar-fill-figma.start {
+      animation: bar-fill-figma 2s ease-out forwards;
+    }
+    .bar-fill-github.start {
+      animation: bar-fill-github 2s ease-out forwards;
+    }
+
+    /* 퍼센트 애니메이션 keyframes */
+    @keyframes bar-fill-html {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 90%;
+      }
+    }
+    @keyframes bar-fill-css {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+    @keyframes bar-fill-javascript {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+    @keyframes bar-fill-photoshop {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 60%;
+      }
+    }
+    @keyframes bar-fill-illustrator {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 55%;
+      }
+    }
+    @keyframes bar-fill-figma {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 70%;
+      }
+    }
+    @keyframes bar-fill-github {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 75%;
       }
     }
   }

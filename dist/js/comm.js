@@ -40,8 +40,28 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 });
 
-// 3. SNS 디자인 Swiper
-// 3. SNS 디자인 Swiper
+// 3. skill 부분
+document.addEventListener("DOMContentLoaded", function () {
+  const skillSection = document.querySelector(".skill");
+  const bars = document.querySelectorAll(".bar-fill");
+  let animated = false;
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight * 0.8;
+  }
+
+  function handleScroll() {
+    if (!animated && isInViewport(skillSection)) {
+      bars.forEach((bar) => bar.classList.add("start"));
+      animated = true;
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // 초기 로딩 시 체크
+});
+// 4. SNS 디자인 Swiper
 new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -56,7 +76,7 @@ new Swiper(".mySwiper", {
   },
 });
 
-// 4. Project 섹션 (가로 스크롤)
+// 5. Project 섹션 (가로 스크롤)
 const horizontalSection = document.querySelector(".horizontal_section");
 const wrapper = horizontalSection.querySelector(".wrapper");
 const items = wrapper.querySelectorAll(".item");
@@ -91,7 +111,7 @@ function initScroll() {
 }
 initScroll();
 
-// 5. Modal (이미지 클릭 시 확대)
+// 6. Modal (이미지 클릭 시 확대)
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal_img");
 const closeBtn = document.querySelector(".close");
