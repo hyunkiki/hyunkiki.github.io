@@ -71,7 +71,7 @@ body {
         color: #fff;
         font-weight: bold;
         opacity: 0;
-        font-family: "Lora", serif;
+        font-family: "Poetsen One", sans-serif;
       }
       .welcome_txt02 {
         margin-top: 20px;
@@ -79,7 +79,7 @@ body {
         color: #fff;
         font-weight: 500;
         opacity: 0;
-        font-family: "Lora", serif;
+        font-family: "Poetsen One", sans-serif;
       }
     }
     .profile_wr {
@@ -183,19 +183,19 @@ body {
     .bar {
       position: relative;
       background-color: #d8d8d8;
-      height: 10px;
+      height: 20px;
       margin: 0 0 20px 0;
     }
 
     .bar-fill {
       position: absolute;
-      height: 10px;
+      height: 20px;
       width: 0; // 💡 초기 상태는 항상 0
     }
 
     .bar-title {
       position: relative;
-      font-size: 1em;
+      font-size: 20px;
       text-align: left;
       margin: 0 0 5px 0;
       color: #fff;
